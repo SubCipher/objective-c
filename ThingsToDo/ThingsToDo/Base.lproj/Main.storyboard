@@ -31,7 +31,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ztJ-CX-emO" kind="show" id="tmg-PQ-OBd"/>
+                                    <segue destination="ztJ-CX-emO" kind="show" identifier="editNotDoneTaskSegue" id="tmg-PQ-OBd"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoneTaskCell" textLabel="2rB-Wk-MWm" style="IBUITableViewCellStyleDefault" id="NkZ-Vv-4oG">
@@ -51,7 +51,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ztJ-CX-emO" kind="show" id="1hz-uF-MFF"/>
+                                    <segue destination="ztJ-CX-emO" kind="show" identifier="editDoneTaskSegue" id="1hz-uF-MFF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -132,7 +132,7 @@
         <!--Edit Task-->
         <scene sceneID="HdQ-9C-T0U">
             <objects>
-                <tableViewController title="Edit Task" id="ztJ-CX-emO" sceneMemberID="viewController">
+                <tableViewController title="Edit Task" id="ztJ-CX-emO" customClass="kpEditTaskTableVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="TFf-jf-2ma">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,6 +151,9 @@
                                                     <rect key="frame" x="22" y="7" width="371" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="taskDataChanged:" destination="ztJ-CX-emO" eventType="editingChanged" id="fnC-pn-7hc"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -174,6 +177,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WzH-ZV-792">
                                                     <rect key="frame" x="315" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="taskDataChanged:" destination="ztJ-CX-emO" eventType="valueChanged" id="rzV-EL-Bse"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -187,6 +193,10 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="doneSwitch" destination="WzH-ZV-792" id="B5L-P0-seg"/>
+                        <outlet property="nameField" destination="CdQ-MH-LJ3" id="XJa-9J-LH3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aar-mP-82h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,6 +241,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tmg-PQ-OBd"/>
+        <segue reference="1hz-uF-MFF"/>
     </inferredMetricsTieBreakers>
 </document>

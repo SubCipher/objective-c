@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		20A4DA3B1C757AF6001638E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A4DA3A1C757AF6001638E6 /* main.m */; };
 		20A4DA3E1C757AF6001638E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A4DA3D1C757AF6001638E6 /* AppDelegate.m */; };
-		20A4DA411C757AF6001638E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A4DA401C757AF6001638E6 /* ViewController.m */; };
 		20A4DA441C757AF6001638E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A4DA421C757AF6001638E6 /* Main.storyboard */; };
 		20A4DA461C757AF6001638E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A4DA451C757AF6001638E6 /* Assets.xcassets */; };
 		20A4DA491C757AF6001638E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A4DA471C757AF6001638E6 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		20A4DA6E1C7587E1001638E6 /* kpTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A4DA6D1C7587E1001638E6 /* kpTask.m */; };
 		20A4DA711C758AFA001638E6 /* kpTaskListTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A4DA701C758AFA001638E6 /* kpTaskListTableVC.m */; };
 		20A4DA771C75E7DE001638E6 /* kpAddTaskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A4DA761C75E7DE001638E6 /* kpAddTaskVC.m */; };
+		20A4DA7A1C77A99A001638E6 /* kpEditTaskTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A4DA791C77A99A001638E6 /* kpEditTaskTableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,6 @@
 		20A4DA3A1C757AF6001638E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20A4DA3C1C757AF6001638E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20A4DA3D1C757AF6001638E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		20A4DA3F1C757AF6001638E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		20A4DA401C757AF6001638E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		20A4DA431C757AF6001638E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20A4DA451C757AF6001638E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20A4DA481C757AF6001638E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +58,8 @@
 		20A4DA701C758AFA001638E6 /* kpTaskListTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpTaskListTableVC.m; sourceTree = "<group>"; };
 		20A4DA751C75E7DE001638E6 /* kpAddTaskVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpAddTaskVC.h; sourceTree = "<group>"; };
 		20A4DA761C75E7DE001638E6 /* kpAddTaskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpAddTaskVC.m; sourceTree = "<group>"; };
+		20A4DA781C77A99A001638E6 /* kpEditTaskTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpEditTaskTableVC.h; sourceTree = "<group>"; };
+		20A4DA791C77A99A001638E6 /* kpEditTaskTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpEditTaskTableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +112,13 @@
 			children = (
 				20A4DA3C1C757AF6001638E6 /* AppDelegate.h */,
 				20A4DA3D1C757AF6001638E6 /* AppDelegate.m */,
-				20A4DA3F1C757AF6001638E6 /* ViewController.h */,
-				20A4DA401C757AF6001638E6 /* ViewController.m */,
 				20A4DA6F1C758AFA001638E6 /* kpTaskListTableVC.h */,
+				20A4DA701C758AFA001638E6 /* kpTaskListTableVC.m */,
 				20A4DA751C75E7DE001638E6 /* kpAddTaskVC.h */,
 				20A4DA761C75E7DE001638E6 /* kpAddTaskVC.m */,
-				20A4DA701C758AFA001638E6 /* kpTaskListTableVC.m */,
 				20A4DA421C757AF6001638E6 /* Main.storyboard */,
+				20A4DA781C77A99A001638E6 /* kpEditTaskTableVC.h */,
+				20A4DA791C77A99A001638E6 /* kpEditTaskTableVC.m */,
 				20A4DA6C1C7587E1001638E6 /* kpTask.h */,
 				20A4DA6D1C7587E1001638E6 /* kpTask.m */,
 				20A4DA451C757AF6001638E6 /* Assets.xcassets */,
@@ -285,8 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A4DA411C757AF6001638E6 /* ViewController.m in Sources */,
 				20A4DA6E1C7587E1001638E6 /* kpTask.m in Sources */,
+				20A4DA7A1C77A99A001638E6 /* kpEditTaskTableVC.m in Sources */,
 				20A4DA771C75E7DE001638E6 /* kpAddTaskVC.m in Sources */,
 				20A4DA3E1C757AF6001638E6 /* AppDelegate.m in Sources */,
 				20A4DA3B1C757AF6001638E6 /* main.m in Sources */,

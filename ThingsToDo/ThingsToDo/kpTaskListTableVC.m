@@ -9,7 +9,7 @@
 #import "kpTaskListTableVC.h"
 #import "kptask.h"
 #import  "kpAddTaskVC.h"
-
+#import "kpEditTaskTableVC.h"
 
 @interface kpTaskListTableVC ()
 
@@ -58,7 +58,13 @@
             addTaskVC.taskListVC = self;
 */
         
-    }
+  /*  } else if ([segue.identifier isEqualToString:@"editDoneTaskSegue"] || [segue.identifier isEqualToString:@"editNotDoneTaskSegue"]){
+        kpEditTaskTableVC *editTaskTableVC = segue.destinationViewController;
+    editTaskTableVC.task
+    } */
+
+        }
+               
 }
 
 
