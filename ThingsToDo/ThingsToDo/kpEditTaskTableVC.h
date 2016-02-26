@@ -13,7 +13,7 @@
 @interface kpEditTaskTableVC : UITableViewController
 
 @property (nonatomic, strong)IBOutlet UITextField *nameField;
-@property (nonatomic, strong)IBOutlet UISwitch * doneSwitch;
+@property (nonatomic, strong)IBOutlet UISwitch *doneSwitch;
 
 @property (nonatomic,strong)kpTask *task;
 

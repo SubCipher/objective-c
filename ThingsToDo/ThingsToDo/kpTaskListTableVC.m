@@ -50,24 +50,15 @@
         
         kpAddTaskVC *addTaskVC = [navCon.viewControllers objectAtIndex:0];
         addTaskVC.taskListVC = self;
+    }
+    else if ([segue.identifier isEqualToString:@"editDoneTaskSegue"] || [segue.identifier isEqualToString:@"editNotDoneTaskSegue"]){
         
-        
-/*
-        if([segue.identifier isEqualToString:@"addTaskSegue"]){
-            kpAddTaskVC *addTaskVC = segue.destinationViewController;
-            addTaskVC.taskListVC = self;
-*/
-        
-  /*  } else if ([segue.identifier isEqualToString:@"editDoneTaskSegue"] || [segue.identifier isEqualToString:@"editNotDoneTaskSegue"]){
         kpEditTaskTableVC *editTaskTableVC = segue.destinationViewController;
-    editTaskTableVC.task
-    } */
-
+        editTaskTableVC.task = [self.tasks objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+        
         }
-               
-}
 
-
+    }
 
 
 #pragma mark - Table view data source
@@ -83,8 +74,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
    
-    static NSString *NotDoneCellIdentifier = @"NotDoneTaskCell";
-    static NSString *DoneCellIdentifier = @"DoneTaskCell";
+    static NSString *NotDoneCellIdentifier = @"editNotDoneTaskSegue";
+    static NSString *DoneCellIdentifier = @"editDoneTaskSegue";
     
     kpTask *currentTask = [self.tasks objectAtIndex:indexPath.row];
     

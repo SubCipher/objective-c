@@ -116,9 +116,9 @@
 				20A4DA701C758AFA001638E6 /* kpTaskListTableVC.m */,
 				20A4DA751C75E7DE001638E6 /* kpAddTaskVC.h */,
 				20A4DA761C75E7DE001638E6 /* kpAddTaskVC.m */,
-				20A4DA421C757AF6001638E6 /* Main.storyboard */,
 				20A4DA781C77A99A001638E6 /* kpEditTaskTableVC.h */,
 				20A4DA791C77A99A001638E6 /* kpEditTaskTableVC.m */,
+				20A4DA421C757AF6001638E6 /* Main.storyboard */,
 				20A4DA6C1C7587E1001638E6 /* kpTask.h */,
 				20A4DA6D1C7587E1001638E6 /* kpTask.m */,
 				20A4DA451C757AF6001638E6 /* Assets.xcassets */,
@@ -488,6 +488,7 @@
 		20A4DA6B1C757AF6001638E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				INFOPLIST_FILE = ThingsToDoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kp.ThingsToDoUITests;
@@ -516,6 +517,7 @@
 				20A4DA651C757AF6001638E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20A4DA661C757AF6001638E6 /* Build configuration list for PBXNativeTarget "ThingsToDoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +526,7 @@
 				20A4DA681C757AF6001638E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20A4DA691C757AF6001638E6 /* Build configuration list for PBXNativeTarget "ThingsToDoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +535,7 @@
 				20A4DA6B1C757AF6001638E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

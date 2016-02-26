@@ -36,8 +36,6 @@
     self.nameField.text = self.task.name;
     [self.doneSwitch setOn:self.task.done];
     
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
