@@ -45,10 +45,10 @@
 - (void)doneButtonPressed:(id)sender{
     
     kpTask * newTask = [[kpTask alloc] initWithName:self.nameField.text done:NO];
+   
     [self.taskListVC.tasks addObject:newTask];
-    
     [self dismissViewControllerAnimated:YES completion:nil];
-    [self.taskListVC.tableView reloadData];
+   // [self.taskListVC.tableView reloadData];
 }
 
 @end

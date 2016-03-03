@@ -31,7 +31,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ztJ-CX-emO" kind="show" identifier="editNotDoneTaskSegue" id="tmg-PQ-OBd"/>
+                                    <segue destination="ztJ-CX-emO" kind="show" identifier="NotDoneTaskCell" id="2xX-jo-Pgd"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoneTaskCell" textLabel="2rB-Wk-MWm" style="IBUITableViewCellStyleDefault" id="NkZ-Vv-4oG">
@@ -51,7 +51,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ztJ-CX-emO" kind="show" identifier="editDoneTaskSegue" id="1hz-uF-MFF"/>
+                                    <segue destination="ztJ-CX-emO" kind="show" identifier="DoneTaskCell" id="LcU-0B-Cq2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -200,7 +200,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aar-mP-82h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620" y="762"/>
+            <point key="canvasLocation" x="352" y="494"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="j1U-zQ-knM">
@@ -241,6 +241,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tmg-PQ-OBd"/>
+        <segue reference="2xX-jo-Pgd"/>
     </inferredMetricsTieBreakers>
 </document>
