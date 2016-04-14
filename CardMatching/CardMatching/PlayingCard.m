@@ -10,23 +10,28 @@
 
 @implementation PlayingCard
 
--(NSString *)contents
-{
+
+
+-(NSString *)contents{
     NSArray * rankStrings = [PlayingCard rankStrings];
     return [rankStrings[self.rank] stringByAppendingString:self.suit];
 }
+
+
 @synthesize suit = _suit;
 
 //class method (not instance)
-+(NSArray *)validSuits
-{
++(NSArray *)validSuits{
     return @[@"♥️",@"♦️",@"♠️",@"♣️"];
-}
+    }
+
+
 
 -(void)setSuit:(NSString *)suit{
     if ([[PlayingCard validSuits] containsObject:suit]){
         _suit = suit;
     }
+    
 }
 
 
@@ -34,9 +39,7 @@
     return _suit ? _suit: @"?";
     }
 
-+(NSArray *)rankStrings
-
-{
++(NSArray *)rankStrings  {
 return       @[@"?",
               @"A",
               @"1",
@@ -55,4 +58,26 @@ return       @[@"?",
 }
 
 
++(NSUInteger)maxRank {
+    return [[self rankStrings] count]-1;
+}
+
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
