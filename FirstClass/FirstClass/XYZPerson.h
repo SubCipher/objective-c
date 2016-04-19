@@ -16,8 +16,13 @@
 
 @property (nonatomic)NSString* firstName;
 @property (nonatomic)NSString * lastName;
+@property (nonatomic)NSDate *DOB;
 
+
+-(void)sayGoodMorning;
 -(void)sayHello;
+-(void)person;
+
 
 
 
