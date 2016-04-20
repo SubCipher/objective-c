@@ -12,50 +12,45 @@
 @implementation XYZPerson
 
 //one
--(void)sayHello{
-    [self saySomething:@"hello cc world"];
-}
 
--(void)saySomething: (NSString *)greeting {
-    NSLog(@"%@", greeting);
-}
-
-//end one
--(void)sayGoodMorning{
+-(void)saySomething{
     [self sayItLoud:@"i'm black and i'm proud"];
 }
 
--(void) sayItLoud: (NSString *)sayItLoud{
-    NSLog(@"%@", sayItLoud);
+
+-(void)sayItLoud: (NSString *) instance{
+    
+    NSLog(@"%@",instance);
 }
 
-//greeting two
 
-
-
-//end two
-
-
-
+-(int)magicNumber{
+    return 43;
+}
 
 
 @end
 
-// > Start main < function
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
        
-        XYZPerson *thisPerson = [[XYZPerson alloc] init];
-        [thisPerson sayHello];
         
         
         XYZPerson *thatPerson = [[XYZPerson alloc] init];
+     
+        [thatPerson saySomething];
         
-        [thatPerson sayGoodMorning];
+        
+        XYZPerson *someObject = [[XYZPerson alloc] init];
+        
+        int x = [someObject magicNumber];
         
         
-          }
-    return 0;
+        
+        
+    return x;
+    }
 }
 
 

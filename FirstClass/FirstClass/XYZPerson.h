@@ -19,11 +19,13 @@
 @property (nonatomic)NSDate *DOB;
 
 
--(void)sayGoodMorning;
--(void)sayHello;
+-(void)saySomething;
+
+
+//-(void)sayHello;
 -(void)person;
 
-
+-(int) magicNumber;
 
 
 
