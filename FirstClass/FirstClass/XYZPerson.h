@@ -12,20 +12,20 @@
 #endif /* XYZPerson_h */
 
 
-@interface XYZPerson: NSObject
-
-@property (nonatomic)NSString* firstName;
-@property (nonatomic)NSString * lastName;
-@property (nonatomic)NSDate *DOB;
+@interface OBJc_class: NSObject
 
 
--(void)saySomething;
+@property (nonatomic)NSString *publicProperty1;
+@property (nonatomic)NSString *publicProperty2 ;
 
+@property (nonatomic)NSDate *publicProperty3;
 
-//-(void)sayHello;
--(void)person;
+//instance method declaration
+-(void)instance_Method1;
 
--(int) magicNumber;
+-(void)instance_Method2;
+
+-(int) instance_Method3;
 
 
 

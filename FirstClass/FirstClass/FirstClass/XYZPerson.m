@@ -9,22 +9,35 @@
 #import <Foundation/Foundation.h>
 #import "XYZPerson.h"
 
-@implementation XYZPerson
+@implementation OBJc_class
 
 //one
 
--(void)saySomething{
-    [self sayItLoud:@"i'm black and i'm proud"];
+//method implementation
+
+
+-(void)instance_Method1{
+    [self methodImplementation1 :@"this is the content for MI-(voi"];
 }
 
-
--(void)sayItLoud: (NSString *) instance{
+-(void)methodImplementation1: (NSString *) parameter{
     
-    NSLog(@"%@",instance);
+    NSLog(@"%@",parameter);
 }
 
 
--(int)magicNumber{
+-(void)instance_Method2{
+    [self run1 :@"text read into object"];
+    
+}
+
+
+-(void)run1 :(NSString *){
+   
+}
+
+
+-(int)instance_Method3 {
     return 43;
 }
 
@@ -37,16 +50,14 @@ int main(int argc, const char * argv[]) {
        
         
         
-        XYZPerson *thatPerson = [[XYZPerson alloc] init];
+        OBJc_class *classInstance = [[OBJc_class alloc] init];
      
-        [thatPerson saySomething];
+        [classInstance instance_Method1];
         
         
-        XYZPerson *someObject = [[XYZPerson alloc] init];
+        OBJc_class *classInstance2 = [[OBJc_class alloc] init];
         
-        int x = [someObject magicNumber];
-        
-        
+        [classInstance2 instance_Method2];
         
         
     return x;
