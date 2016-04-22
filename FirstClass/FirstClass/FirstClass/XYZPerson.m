@@ -17,22 +17,21 @@
 
 
 -(void)instance_Method1{
-    [self methodImplementation1 :@"this is the content for MI-(voi"];
+    [self methodImplementation1 :@"this is the content for M1"];
 }
 
 -(void)methodImplementation1: (NSString *) parameter{
-    
     NSLog(@"%@",parameter);
 }
 
 
 -(void)instance_Method2{
-    [self run1 :@"text read into object"];
-    
+    [self instance_of_M2 :@"text read into object"];
 }
 
-
--(void)run1 :(NSString *){
+//this declares the selector
+-(void) instance_of_M2 :(NSString *) randomName {
+    NSLog(@"%@",randomName);
    
 }
 
@@ -47,20 +46,28 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-       
         
         
         OBJc_class *classInstance = [[OBJc_class alloc] init];
-     
         [classInstance instance_Method1];
+        
+       
+        
+        
+        
+        
+        
         
         
         OBJc_class *classInstance2 = [[OBJc_class alloc] init];
-        
         [classInstance2 instance_Method2];
         
+        OBJc_class *classInstance3 = [[OBJc_class alloc] init];
+        int x;
+        x = [classInstance3 instance_Method3];
         
-    return x;
+        NSLog(@"%d",x);
+        
     }
 }
 
