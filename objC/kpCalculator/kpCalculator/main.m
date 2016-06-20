@@ -26,52 +26,43 @@
 
 @end
 
-@implementation kpCalculator
-{
+@implementation kpCalculator{
     double accumulator;
 }
 
--(void)setAccumulator: (double) value
-{
+-(void)setAccumulator: (double) value{
     accumulator = value;
 }
 
 
--(void) clear
-{
+-(void) clear{
     accumulator = 0;
 }
 
--(double) accumulator
-{
+-(double) accumulator{
     return accumulator;
 }
 
--(void) add: (double) value
-{
+-(void) add: (double) value{
     accumulator += value;
 }
 
--(void) subtract: (double) value
-{
+-(void) subtract: (double) value{
     accumulator -= value;
 }
 
 
--(void) multiply: (double) value
-{
+-(void) multiply: (double) value{
     accumulator *= value;
 }
 
 
--(void) divide: (double) value
-{
+-(void) divide: (double) value{
     accumulator /= value;
 }
 
 
--(void) print
-{
+-(void) print{
     NSLog(@"value of accumulator: %f",accumulator);
 }
 
@@ -92,8 +83,26 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"The result is %g", [deskCalc accumulator]);
     }
+    
+    
+    float celsius;
+    float fahren= 27;
+    
+    celsius = ((fahren - 32) / 1.8);
+    NSLog(@"%f degress Fahrenheit(F) is %f degress Celsius",fahren,celsius);
+    
+    
+    char c,d;
+    
+    c = 'd';
+    d = c;
+    
+    NSLog(@"d1 = %c",d);
+    
+    
+    
+    
+    
+    
     return 0;
 }
-
-
-
