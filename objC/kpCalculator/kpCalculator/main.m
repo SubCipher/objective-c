@@ -16,24 +16,36 @@
 -(double) accumulator;
 -(void) print;
 
+//new stuff
+-(double) changeSign;
+-(double) reciprocal;
+-(double) xSquared;
+
+-(double) memoryClear;
+-(double) memoryStore;
+-(double) memoryRecall;
+-(double) memoryAdd: (double) value;
+-(double) memorySubtract: (double) value;
+-(double) memory;
+
 
 //arithmeic method declarations
 
--(void) add: (double) value;
--(void) subtract: (double) value;
--(void) multiply: (double) value;
--(void) divide: (double) value;
+-(double) add: (double) value;
+-(double) subtract: (double) value;
+-(double) multiply: (double) value;
+-(double) divide: (double) value;
 
 @end
 
 @implementation kpCalculator{
     double accumulator;
+    double memory;
 }
 
 -(void)setAccumulator: (double) value{
     accumulator = value;
 }
-
 
 -(void) clear{
     accumulator = 0;
@@ -43,22 +55,26 @@
     return accumulator;
 }
 
--(void) add: (double) value{
+-(double) add: (double) value{
     accumulator += value;
+    return accumulator;
 }
 
--(void) subtract: (double) value{
+-(double) subtract: (double) value{
     accumulator -= value;
+    return accumulator;
 }
 
 
--(void) multiply: (double) value{
+-(double) multiply: (double) value{
     accumulator *= value;
+    return accumulator;
 }
 
 
--(void) divide: (double) value{
+-(double) divide: (double) value{
     accumulator /= value;
+    return accumulator;
 }
 
 
@@ -66,6 +82,50 @@
     NSLog(@"value of accumulator: %f",accumulator);
 }
 
+-(double) changeSign{
+    if(accumulator > 0){
+        accumulator = (-accumulator);
+    } else{
+              accumulator = (accumulator*-1);
+    }
+    return accumulator;
+}
+
+-(double) reciprocal{
+    
+    return accumulator;
+}
+-(double) xSquared {
+
+    accumulator = pow(accumulator,2);
+    return accumulator;
+}
+
+-(double) memoryClear{
+    accumulator = 0;
+    return accumulator;
+}
+
+-(double) memoryStore {
+    memory = accumulator;
+    return memory;
+}
+-(double) memoryRecall{
+    accumulator = memory;
+    return accumulator;
+    
+}
+-(double) memoryAdd: (double) value{
+    memory = memory + value;
+    return memory;
+}
+-(double) memorySubtract: (double) value{
+    memory = memory - value;
+    return memory;
+}
+-(double) memory{
+    return memory;
+}
 
 @end
 
@@ -82,6 +142,11 @@ int main(int argc, const char * argv[]) {
         [deskCalc multiply: 5];
         
         NSLog(@"The result is %g", [deskCalc accumulator]);
+        NSLog(@"The result is %g", [deskCalc add:45]);
+        NSLog(@"The result is %g", [deskCalc subtract:15]);
+        NSLog(@"The result is %g", [deskCalc multiply:-4]);
+        NSLog(@"The result is %g", [deskCalc changeSign]);
+
     }
     
     

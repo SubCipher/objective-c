@@ -40,6 +40,12 @@ int main(int argc, const char * argv[]) {
         f2= (float)i2 /100; //type cast operator
         NSLog(@"(float)%i divided by 100 produces %f",i2,f2);
         
+        
+        
+        
+        
+        
+        
     }
     return 0;
 }
