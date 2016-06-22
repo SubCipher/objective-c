@@ -20,21 +20,9 @@ int main(int argc, const char * argv[]) {
             triangularNumber =0;
             for( n = 1; n <= number; ++n){
                 triangularNumber += n;
-                
-            }NSLog(@"Triangular number %i is %i",number, triangularNumber);
+            }
+        NSLog(@"Triangular number %i is %i",number, triangularNumber);
         }
-        
-            unsigned int u,v,temp;
-        
-        NSLog(@"enter two non-negative numbers:");
-        scanf("%u,%u",&u,&v);
-        
-        while(v != 0){
-            temp = u % v;
-            u = v;
-            v = temp;
-        }
-        NSLog(@"the GCD is: %d",u);
     }
     
     return 0;
