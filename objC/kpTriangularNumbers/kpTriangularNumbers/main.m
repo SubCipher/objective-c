@@ -21,7 +21,9 @@ int main(int argc, const char * argv[]) {
             for( n = 1; n <= number; ++n){
                 triangularNumber += n;
             }
-        NSLog(@"Triangular number %i is %i",number, triangularNumber);
+        NSLog(@"(a)Triangular number %i is %i",number, triangularNumber);
+        NSLog(@"\n\n");
+        NSLog(@"(b)Triangular number %-2i is %-2i",number, triangularNumber);
         }
     }
     
