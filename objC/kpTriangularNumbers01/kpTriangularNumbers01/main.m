@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         
         triangularNumber = 0;
         
-        for(n =1; n <= 2000; n = n +1){
+        for(n =1; n <= 200; n = n +1){
             
             triangularNumber += n;
             NSLog (@"The 200th triangular number is %i", triangularNumber);
