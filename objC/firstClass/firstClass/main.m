@@ -14,6 +14,8 @@
 -(void) setDenominator: (int) d;
 -(int) numerator;
 -(int) denominator;
+-(double) convertToNum;
+
 
 @end
 
@@ -45,40 +47,44 @@
 }
 
 
+-(double) convertToNum {
+    if (denominator != 0)
+        return (double) numerator /denominator;
+    else
+        return NAN;
+}
+
 @end
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         //create an instance of Fraction
-        Fraction *myFraction;
+        Fraction *aFraction;
 
         
-        myFraction = [Fraction alloc];
-        myFraction = [myFraction init];
+        aFraction = [Fraction alloc];
+        aFraction = [aFraction init];
         //these three lines can be combined to form: "Fraction *myFraction = [[Fraction alloc] init];
-        Fraction *f2 = [[Fraction alloc]init];
+        Fraction *bFraction = [[Fraction alloc]init];
         
         //set fraction values
         
-        [myFraction setNumerator: 1];
-        [myFraction setDenominator: 3];
-        [f2 setNumerator: 2];
-        [f2 setDenominator: 8];
+        [aFraction setNumerator: 1];
+        [aFraction setDenominator: 4];
+//        [bFraction setNumerator: 2];
+//        [bFraction setDenominator: 8];
         
         
         //Display the fraction
         
-        NSLog(@"The value of myFraction is:");
-        [myFraction print];
-        [f2 print];
+        [aFraction print];
+        NSLog(@" =");
+        NSLog(@"%g", [aFraction convertToNum]);
         
-        NSLog(@"f2 return value: f2 numerator/denominator %i/%i",[f2 numerator],[f2 denominator]);
-           }
+        [bFraction print];
+        NSLog(@" =");
+        NSLog(@"%g", [bFraction convertToNum]);
+       
+            }
     return 0;
 }
-
-
-
-
-
-
