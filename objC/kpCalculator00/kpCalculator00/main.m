@@ -73,7 +73,11 @@
 
 
 -(double) divide: (double) value{
-    accumulator /= value;
+    if(value == 0)
+        NSLog(@"Division by zero.");
+    else
+       accumulator /= value;
+    
     return accumulator;
 }
 
@@ -137,38 +141,68 @@ int main(int argc, const char * argv[]) {
         char operator;
         double value1, value2;
         kpCalculator *desktopCal = [[kpCalculator alloc]init];
-        
-        
-        NSLog(@"enter value for variable 1");
-        scanf(" %lf",&value1);
-        
-        NSLog(@"enter value for variable 2");
-        scanf(" %lf",&value2);
+        kpCalculator *desktopCal2 = [[kpCalculator alloc]init];
 
         
-        NSLog(@"enter an operation symbol  (*,-,+,or /)");
-        scanf(" %c",&operator);
-        NSLog(@"%lf %c %lf",value1,operator,value2);
+        
+        NSLog(@"enter your expression");
+        scanf("%lf %c %lf",&value1,&operator,&value2);
+        
+        NSLog(@"your expressoin: %lf %c %lf",value1,operator,value2);
         
         [desktopCal setAccumulator: value1];
+        
+//        
+//        if( operator == '+')
+//           NSLog(@" %f %c %f = %f",value1,operator,value2,[desktopCal add: value2]);
+//        else if
+//            (operator == '-')
+//            NSLog(@" %f %c %f = %f",value1,operator,value2,[desktopCal subtract: value2]);
+//        
+//        else if
+//            (operator == '*')
+//            NSLog(@" %f %c %f = %f",value1,operator,value2,[desktopCal multiply: value2]);
+//   
+//        else if
+//            (operator == '/')
+//             if(value2 == 0)
+//                NSLog(@"Division by zero.");
+//            else
+//                [desktopCal divide: value2];
+//            
+//        else
+//            
+//            NSLog(@"Unknown operator.");
+//            NSLog(@"%.2f", [desktopCal accumulator]);
+//        
+        //switch version
+        
+       [desktopCal2 setAccumulator: value1];
+        
+        switch ( operator ){
+            case '+':
+                NSLog(@" %f %c %f = %f",value1,operator,value2,[desktopCal2 add: value2]);
+                break;
+        
+            case '-':
+                NSLog(@" %f %c %f = %f",value1,operator,value2,[desktopCal2 subtract: value2]);
+                break;
+       
+            case '*':
+                NSLog(@" %f %c %f = %f",value1,operator,value2,[desktopCal2 multiply: value2]);
+                break;
+            case '/':
+                NSLog(@" %f %c %f = %f",value1,operator,value2,[desktopCal2 divide: value2]);
+                break;
+           
+            default:
+                NSLog(@"Unknown operator.");
+        }
+        NSLog(@"wtf %.2f", [desktopCal2 accumulator]);
+        
 
         
-        if( operator == '+')
-           
-            NSLog(@" %f %c %f = %f)",value1,operator,value2,[desktopCal add: value2]);
-        else if
-            (operator == '-')
-            NSLog(@" %f %c %f = %f)",value1,operator,value2,[desktopCal subtract: value2]);
-        
-        else if
-            (operator == '*')
-            NSLog(@" %f %c %f = %f)",value1,operator,value2,[desktopCal multiply: value2]);
-   
-        else if
-            (operator == '/')
-            NSLog(@" %f %c %f = %f)",value1,operator,value2,[desktopCal divide: value2]);
-       
-    }
+   }
     
     
     return 0;
