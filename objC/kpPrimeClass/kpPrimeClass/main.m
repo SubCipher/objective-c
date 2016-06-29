@@ -10,95 +10,98 @@
 
 @interface kpPrimeClass: NSObject
 
--(void) setNum: (int) v1;
--(void) setRangeToCheck: (int) v2;
+-(void) setMiniPrime: (int) v1;
+-(void) setMaxPrime: (int) v2;
 
 
 //-(int) value1;
 //-(int) value2;
 
--(int) isValid: (int) checkNum;
+-(int) isValid: (int) checkForValid_Num;
 
--(void) primeTest:(int) numToCheck maxRange:(int) range;
+-(void)primeTable:(int)startRange endCheck:(int) endRange ;
 
 
 @end
 
 @implementation kpPrimeClass{
-    int num;
-    int rangeToCheck;
+    int miniPrime;
+    int maxPrime;
 }
 
--(void) setNum: (int) setV1 {
-    setV1 = num;
-    }
+-(void) setminiPrime: (int) setV1 {
+    setV1 = miniPrime;
+}
 
--(void) setRangeToCheck: (int) setV2 {
-    setV2 = rangeToCheck;
+-(void) setMaxPrime: (int) setV2 {
+    setV2 = maxPrime;
 }
 
 
-
--(int) isValid: (int) checkNum {
+-(int) isValid: (int)checkForValid_Num {
     
-    if( checkNum >= 0  && checkNum <= 50 )
+    if( checkForValid_Num >= 0  && checkForValid_Num <= 999999)
         NSLog(@"is a valid number");
     
-        else if ( checkNum < 0 )
-          NSLog(@"is a valid operation using negitive integers");
+    else if ( checkForValid_Num < 0 )
+        NSLog(@"is a valid operation using negitive integers");
     
-    else NSLog(@"%d is not valid.  Please try agin",checkNum);
-    return checkNum;
+    else NSLog(@"%d is not valid.  Please try agin",checkForValid_Num);
+    return checkForValid_Num;
 }
 
 
--(void) primeTest:(int) numToCheck maxRange:(int) range {
-    int isPrime = 0;
-    int p, d;
+-(void)primeTable:(int)startRange endCheck:(int) endRange {
+    int count = 0;
+    int isPrime =0;
+    int p,d =0;
     
-    for ( p = numToCheck; p <= range; ++p)
-        isPrime =1;
-    
-        for (d = numToCheck; d < range; ++d )
-            if (p % d == 0 )
-                    isPrime = 0;
-                    NSLog (@"%i is a prime number ** ",numToCheck);
-    
-        if ( isPrime != 0 )
-            NSLog (@"%i is not a prmime number *** ",numToCheck);
+    for ( p = startRange ; p <= endRange; ++p){
+       
+        
+        for( d = 1 ; d < p; ++d){
 
+            if( p % d == 0){
+                count ++;
+            if(count  > 2 )
+                NSLog(@"prime status for:%i  *This is not a prime number\n",p);
+            else
+                NSLog(@"prime status for:%i  *This is a prime number\n",p);
+                count = 0;
+                      
+        }
+    }
+    
+    }
 }
-
-
 @end
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int num;
-        int rangeToCheck;
+        int startPrimeCheck;
+        int endPrimeCheck;
         
         kpPrimeClass *findPrime1 = [[kpPrimeClass alloc]init];
         
-        NSLog(@"enter prime multiple:");
-        scanf("%d",&num);
-        NSLog(@"you entered int# %d",num);
-        [findPrime1 isValid: num];
-        [findPrime1 setRangeToCheck: num];
+        NSLog(@"enter starting point:");
+        scanf("%d",&startPrimeCheck);
+        NSLog(@"you entered int# %d",startPrimeCheck);
+        [findPrime1 isValid: startPrimeCheck];
+        [findPrime1 setMaxPrime: endPrimeCheck];
         
-        NSLog(@"enter max range to search for prime numbers");
-        scanf("%d",&rangeToCheck);
-         NSLog(@"you entered int# %d",rangeToCheck);
-        [findPrime1 isValid: rangeToCheck];
-        [findPrime1 setRangeToCheck: rangeToCheck];
-        
-        
-        
-        [findPrime1 primeTest: num maxRange: rangeToCheck];
+        NSLog(@"enter max table range to search for prime");
+        scanf("%d",&endPrimeCheck);
+        NSLog(@"you entered int# %d",endPrimeCheck);
+        [findPrime1 isValid: endPrimeCheck];
+        [findPrime1 setMaxPrime: endPrimeCheck];
         
         
         
+        [findPrime1 primeTable:(int)startPrimeCheck endCheck:(int) endPrimeCheck];
         
-    
+        
+        
+        
     }
     return 0;
 }
