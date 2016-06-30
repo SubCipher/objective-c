@@ -29,7 +29,7 @@
     int maxPrime;
 }
 
--(void) setminiPrime: (int) setV1 {
+-(void) setMiniPrime: (int) setV1 {
     setV1 = miniPrime;
 }
 
@@ -54,25 +54,29 @@
 -(void)primeTable:(int)startRange endCheck:(int) endRange {
     int count = 0;
     int isPrime =0;
+    
     int p,d =0;
     
     for ( p = startRange ; p <= endRange; ++p){
        
-        
+         count = 0;
         for( d = 1 ; d < p; ++d){
-
+           
             if( p % d == 0){
-                count ++;
-            if(count  > 2 )
-                NSLog(@"prime status for:%i  *This is not a prime number\n",p);
-            else
-                NSLog(@"prime status for:%i  *This is a prime number\n",p);
-                count = 0;
-                      
+               count++;
+                }
+            }
+        if(count >=2 ){
+            NSLog(@"prime status for:%i (%i %s %i= %i |%i) NOT prime \n",p, p,"%",d,p%d,count);
         }
-    }
+        else{
+            
+            NSLog(@"prime status for:%i (%i %s %i= %i |%i) * Yes is prime\n",p, p,"%",d,p%d,count);
+            ++isPrime;
+        }
     
     }
+    NSLog(@"toal number of prime numbers from %i to %i is: %i",startRange,endRange,isPrime);
 }
 @end
 

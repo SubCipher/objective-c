@@ -150,7 +150,7 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"your expressoin: %lf %c %lf",value1,operator,value2);
         
-        [desktopCal setAccumulator: value1];
+ //       [desktopCal setAccumulator: value1];
         
 //        
 //        if( operator == '+')

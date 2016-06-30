@@ -26,8 +26,9 @@
 }
 
 -(void) print{
-    NSLog (@"%i/%i", numerator, denominator);
-}
+   
+    NSLog (@"%i/%i",numerator, denominator);
+    }
 
 -(void) setNumerator: (int) n{
     numerator =n;
@@ -48,10 +49,17 @@
 
 
 -(double) convertToNum {
-    if (denominator != 0)
+    int zero = 0;
+    
+        if (denominator != 0)
         return (double) numerator /denominator;
+    else if
+        (denominator == 0)
+        return zero;
+    
     else
         return NAN;
+    
 }
 
 @end
@@ -69,8 +77,8 @@ int main(int argc, const char * argv[]) {
         
         //set fraction values
         
-        [aFraction setNumerator: 1];
-        [aFraction setDenominator: 4];
+        [aFraction setNumerator: 5];
+        [aFraction setDenominator: 1];
 //        [bFraction setNumerator: 2];
 //        [bFraction setDenominator: 8];
         
