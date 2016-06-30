@@ -73,10 +73,10 @@
 
 
 -(double) divide: (double) value{
-    if(value == 0)
-        NSLog(@"Division by zero.");
+    if(value != 0)
+        accumulator /= value;
     else
-       accumulator /= value;
+        NSLog(@"Division by zero.");
     
     return accumulator;
 }
