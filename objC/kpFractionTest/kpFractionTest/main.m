@@ -10,14 +10,19 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        kpFraction *myFraction = [[kpFraction alloc] init];
+        kpFraction *aFraction = [[kpFraction alloc] init];
+        kpFraction *bFraction = [[kpFraction alloc]init];
+        kpFraction *resultFraction;
         
-        [myFraction setNumerator: 1];
-        [myFraction setDenominator: 3];
+        [aFraction setTo:3 over:5];
+        [bFraction setTo:1 over:2];
+        [aFraction print];
+         NSLog(@"*");
+        [bFraction print];
+        NSLog(@"=");
         
-        NSLog(@"The value of myFraction is:");
-        
-        [myFraction print];
-    }
+        resultFraction = [aFraction multiply:bFraction];
+        [resultFraction print];
+            }
     return 0;
 }
