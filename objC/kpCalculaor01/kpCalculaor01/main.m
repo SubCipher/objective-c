@@ -13,7 +13,8 @@
 
 
 -(void) setAccumulator: (double) value;
--(void) sanitize: (double) value00 ops: (char) operator secValue: (double) value01;
+//-(void) sanitize: (double) value00 ops: (char) operator secValue: (double) value01;
+-(void) sanitize: (char) value;
 -(void) End;
 -(double) S;
 
@@ -37,19 +38,28 @@
     
     accumulator = value;
 }
+//need improvement
+// refactor to use less code
 
--(void) sanitize: (double) value00 ops: (char) operator secValue: (double) value01{
-    if( ( value00 >= 0  && value00 <= 9999999) &&
-       (operator == '+' || operator == '-' || operator == '*' || operator == '/' || operator == 'S' || operator =='E') &&
-       ( value01 >= 0  && value01 <= 9999999)) {
-        NSLog(@"thank you");
+//-(void) sanitize: (double) value00 ops: (char) operator secValue: (double) value01{
+//    if( ( value00 >= 0  && value00 <= 9999999) &&
+//       (operator == '+' || operator == '-' || operator == '*' || operator == '/' || operator == 'S' || operator =='E') &&
+//       ( value01 >= 0  && value01 <= 9999999)) {
+//        NSLog(@"thank you");
+//        }
+//    else{
+//        
+//        NSLog(@"bad input please enter a digit");
+//
+//    };
+//}
+
+
+
+-(void) sanitize: (char) value {
+    //read value into array and filter data for valid/invalid chars
         }
-    else{
-        
-        NSLog(@"bad input please enter a digit");
 
-    };
-}
 
 -(double)add: (double) value {
     NSLog(@"%lg + % lg is: %lg",accumulator, value,(accumulator+= value));
@@ -99,42 +109,42 @@ int main(int argc, const char * argv[]) {
         
         Calculator *sCal = [[Calculator alloc]init];
         
-        double value00,value01;
-        char operator;
+        char expression[10];
         NSLog(@"enter an expression");
-        scanf(" %lg %c %lg",&value00,&operator,&value01);
+        scanf(" %c",expression);
         
-        [sCal sanitize: value00 ops: operator secValue: value01];
-        [sCal setAccumulator: value00];
+        //[sCal sanitize: value00 ops: operator secValue: value01];
+        [sCal sanitize: *expression];
+       // [sCal setAccumulator:expression];
         
-        switch ( operator) {
-            case '+':
-                
-                [sCal add: value01];
-                break;
-                
-            case '-':
-               [sCal subtract: value01];
-                break;
-                
-            case '*':
-                [sCal multiply: value01];
-                break;
-                
-            case '/':
-               [sCal divide: value01];
-                break;
-
-                
-            case 'S':
-                [sCal S];
-                break;
-
-            case 'E':
-                [sCal End];
-                break;
-                
-        }
+//        switch ( operator) {
+//            case '+':
+//                
+//                [sCal add: value01];
+//                break;
+//                
+//            case '-':
+//               [sCal subtract: value01];
+//                break;
+//                
+//            case '*':
+//                [sCal multiply: value01];
+//                break;
+//                
+//            case '/':
+//               [sCal divide: value01];
+//                break;
+//
+//                
+//            case 'S':
+//                [sCal S];
+//                break;
+//
+//            case 'E':
+//                [sCal End];
+//                break;
+//                
+//        }
         
         
         
