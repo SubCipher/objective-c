@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20BB83D01D197AFF00F016D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB83CF1D197AFF00F016D2 /* main.m */; };
+		20F053BE1D27D15300BEC58D /* kpRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053BD1D27D15300BEC58D /* kpRectangle.m */; };
+		20F053C11D27D20D00BEC58D /* kpSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053C01D27D20D00BEC58D /* kpSquare.m */; };
+		20F053C71D28319300BEC58D /* kpXYZpoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053C61D28319300BEC58D /* kpXYZpoints.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		20BB83CC1D197AFF00F016D2 /* kpRectangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kpRectangle; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BB83CF1D197AFF00F016D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20F053BC1D27D15300BEC58D /* kpRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpRectangle.h; sourceTree = "<group>"; };
+		20F053BD1D27D15300BEC58D /* kpRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpRectangle.m; sourceTree = "<group>"; };
+		20F053BF1D27D20D00BEC58D /* kpSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpSquare.h; sourceTree = "<group>"; };
+		20F053C01D27D20D00BEC58D /* kpSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpSquare.m; sourceTree = "<group>"; };
+		20F053C51D28319300BEC58D /* kpXYZpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kpXYZpoints.h; path = ../kpXYZpoints.h; sourceTree = "<group>"; };
+		20F053C61D28319300BEC58D /* kpXYZpoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = kpXYZpoints.m; path = ../kpXYZpoints.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +66,12 @@
 		20BB83CE1D197AFF00F016D2 /* kpRectangle */ = {
 			isa = PBXGroup;
 			children = (
+				20F053BC1D27D15300BEC58D /* kpRectangle.h */,
+				20F053BD1D27D15300BEC58D /* kpRectangle.m */,
+				20F053BF1D27D20D00BEC58D /* kpSquare.h */,
+				20F053C01D27D20D00BEC58D /* kpSquare.m */,
+				20F053C51D28319300BEC58D /* kpXYZpoints.h */,
+				20F053C61D28319300BEC58D /* kpXYZpoints.m */,
 				20BB83CF1D197AFF00F016D2 /* main.m */,
 			);
 			path = kpRectangle;
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F053C11D27D20D00BEC58D /* kpSquare.m in Sources */,
+				20F053BE1D27D15300BEC58D /* kpRectangle.m in Sources */,
 				20BB83D01D197AFF00F016D2 /* main.m in Sources */,
+				20F053C71D28319300BEC58D /* kpXYZpoints.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +257,7 @@
 				20BB83D51D197AFF00F016D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
