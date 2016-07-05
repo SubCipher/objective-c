@@ -10,4 +10,9 @@
 
 @interface classA : NSObject
 
+-(void) printVar;
+-(void) initVar: (int) xVal;
+
+-(int) x;
+
 @end

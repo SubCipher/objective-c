@@ -8,6 +8,21 @@
 
 #import "classA.h"
 
-@implementation classA
+@implementation classA{
+    int x;
+}
+
+
+-(void) initVar: (int) xVal  {
+    x = xVal;
+}
+
+-(void) printVar{
+    NSLog(@"initVar = %i",x);
+}
+
+-(int) x{
+    return x;
+}
 
 @end

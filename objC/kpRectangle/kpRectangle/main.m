@@ -15,34 +15,44 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         kpRectangle *myRectangle =[[kpRectangle alloc]init];
-        
-        
         [myRectangle setWidth:5 andHeight: 8];
-        NSLog(@"rectangle perimeter = %d",[myRectangle perimeter]);
-        NSLog(@"rectangle area = %d",[myRectangle area]);
-        NSLog(@"\n\n");
         
-        
-        kpSquare *mySquare = [[kpSquare alloc]init];
-        [mySquare setSide: 5];
-        NSLog(@"Square s = %i", [mySquare side]);
-        NSLog(@"Area = %d, Perimeter = %d", [mySquare area], [mySquare perimeter]);
-        NSLog(@"\n\n");
-        
-        
+//
+//        NSLog(@"rectangle perimeter = %f",[myRectangle perimeter]);
+//        NSLog(@"rectangle area = %f",[myRectangle area]);
+//        NSLog(@"\n\n");
+//        
+//        
+//        kpSquare *mySquare = [[kpSquare alloc]init];
+//        [mySquare setSide: 5];
+//        NSLog(@"Square s = %f", mySquare.side);
+//        NSLog(@"Area = %f, Perimeter = %f", [mySquare area], [mySquare perimeter]);
+//        NSLog(@"\n\n");
+//        
+//        
         kpRectangle *myRect = [[kpRectangle alloc]init];
         kpXYZpoints *myPoint = [[kpXYZpoints alloc]init];
         
-        [myPoint setX: 100 andY:200];
-        [myRect setWidth: 5 andHeight: 8];
+        
+        [myPoint setX: 200 andY:420];
+        [myRect setWidth: 250 andHeight: 175];
         myRect.origin = myPoint;
+        [myRect translate: myPoint];
+         myRect.origin = myPoint;
+        [myRect intersect: myRect];
         
-        //NSLog(@"Rectangle w = %i, h = %i", myRect.width, myRect.height);
-        NSLog(@"Origin at (%i, %i)", myRect.origin.x, myRect.origin.y);
+//        NSLog(@"Rectangle w = %f, h = %f", myRect.width, myRect.height);
+//        NSLog(@"Origin at (%f, %f)", myRect.origin.x, myRect.origin.y);
+//        
+//        NSLog(@"Area = %f, Perimeter = %f",[myRect area], [myRect perimeter]);
+//        [myPoint setX: 150 andY:150];
+//       
+//        
+//        NSLog(@"Origin at (%f, %f)", myRect.origin.x, myRect.origin.y);
         
-        //NSLog(@"Area = %i, Perimeter = %i",[myRect area], [myRect perimeter]);
-         [myPoint setX: 50 andY:50];
-        NSLog(@"Origin at (%i, %i)", myRect.origin.x, myRect.origin.y);
+        NSLog(@"intersec results: %@", [myRect intersect: myRect]);
+        
+        
     }
     return 0;
 }

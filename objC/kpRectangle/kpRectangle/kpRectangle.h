@@ -7,22 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "kpXYZpoints.h"
+#import "kpGraphicObject.h"
 
 @class kpXYZpoints;
-@interface kpRectangle: NSObject
+@interface kpRectangle: kpGraphicObject
 
-//@property int width, height;
+-(BOOL)containsPoint: (kpXYZpoints *) aPoint;
+
+-(void) setWidth: (float) w andHeight: (float) h;
+-(float) perimeter;
+-(float) width;
+-(float) height;
+-(float) area;
+
 
 -(kpXYZpoints *)  origin;
 
 -(void) setOrigin: (kpXYZpoints *) pt;
+-(void)translate: (kpXYZpoints *) vector;
+-(kpRectangle *) intersect: (kpRectangle *) newAngle;
 
--(void) setWidth: (int) w andHeight: (int) h;
--(int) width;
--(int) height;
--(int) area;
--(int) perimeter;
 
 @end
 

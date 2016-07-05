@@ -9,5 +9,22 @@
 #import "classC.h"
 
 @implementation classC
+{
+    int x;
+}
+
+-(void) initVar: (int) xVal {
+    x = xVal;
+}
+
+//-(void) printVar{
+//    NSLog(@"initVar = %i",x);
+//}
+
+
+-(int) x{
+    return x;
+}
+
 
 @end

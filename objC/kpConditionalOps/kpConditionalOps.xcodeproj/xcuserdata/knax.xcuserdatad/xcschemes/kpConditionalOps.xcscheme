@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20F053D01D294F3200BEC58D"
-               BuildableName = "abClasess"
-               BlueprintName = "abClasess"
-               ReferencedContainer = "container:abClasess.xcodeproj">
+               BlueprintIdentifier = "20F053F51D2B486E00BEC58D"
+               BuildableName = "kpConditionalOps"
+               BlueprintName = "kpConditionalOps"
+               ReferencedContainer = "container:kpConditionalOps.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20F053D01D294F3200BEC58D"
-            BuildableName = "abClasess"
-            BlueprintName = "abClasess"
-            ReferencedContainer = "container:abClasess.xcodeproj">
+            BlueprintIdentifier = "20F053F51D2B486E00BEC58D"
+            BuildableName = "kpConditionalOps"
+            BlueprintName = "kpConditionalOps"
+            ReferencedContainer = "container:kpConditionalOps.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20F053D01D294F3200BEC58D"
-            BuildableName = "abClasess"
-            BlueprintName = "abClasess"
-            ReferencedContainer = "container:abClasess.xcodeproj">
+            BlueprintIdentifier = "20F053F51D2B486E00BEC58D"
+            BuildableName = "kpConditionalOps"
+            BlueprintName = "kpConditionalOps"
+            ReferencedContainer = "container:kpConditionalOps.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20F053D01D294F3200BEC58D"
-            BuildableName = "abClasess"
-            BlueprintName = "abClasess"
-            ReferencedContainer = "container:abClasess.xcodeproj">
+            BlueprintIdentifier = "20F053F51D2B486E00BEC58D"
+            BuildableName = "kpConditionalOps"
+            BlueprintName = "kpConditionalOps"
+            ReferencedContainer = "container:kpConditionalOps.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

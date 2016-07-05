@@ -10,4 +10,6 @@
 
 @interface classC : classB
 
+-(void) initVar: (int) xVal;
+-(int) x;
 @end

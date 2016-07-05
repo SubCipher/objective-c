@@ -11,6 +11,9 @@
 		20F053BE1D27D15300BEC58D /* kpRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053BD1D27D15300BEC58D /* kpRectangle.m */; };
 		20F053C11D27D20D00BEC58D /* kpSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053C01D27D20D00BEC58D /* kpSquare.m */; };
 		20F053C71D28319300BEC58D /* kpXYZpoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053C61D28319300BEC58D /* kpXYZpoints.m */; };
+		20F053E61D2A81FD00BEC58D /* kpGraphicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053E51D2A81FD00BEC58D /* kpGraphicObject.m */; };
+		20F053E91D2A8A8100BEC58D /* kpCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053E81D2A8A8100BEC58D /* kpCircle.m */; };
+		20F053EC1D2A8A9200BEC58D /* kpTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053EB1D2A8A9200BEC58D /* kpTriangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,12 @@
 		20F053C01D27D20D00BEC58D /* kpSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpSquare.m; sourceTree = "<group>"; };
 		20F053C51D28319300BEC58D /* kpXYZpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kpXYZpoints.h; path = ../kpXYZpoints.h; sourceTree = "<group>"; };
 		20F053C61D28319300BEC58D /* kpXYZpoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = kpXYZpoints.m; path = ../kpXYZpoints.m; sourceTree = "<group>"; };
+		20F053E41D2A81FD00BEC58D /* kpGraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpGraphicObject.h; sourceTree = "<group>"; };
+		20F053E51D2A81FD00BEC58D /* kpGraphicObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpGraphicObject.m; sourceTree = "<group>"; };
+		20F053E71D2A8A8100BEC58D /* kpCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpCircle.h; sourceTree = "<group>"; };
+		20F053E81D2A8A8100BEC58D /* kpCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpCircle.m; sourceTree = "<group>"; };
+		20F053EA1D2A8A9200BEC58D /* kpTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpTriangle.h; sourceTree = "<group>"; };
+		20F053EB1D2A8A9200BEC58D /* kpTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpTriangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,12 @@
 			children = (
 				20F053BC1D27D15300BEC58D /* kpRectangle.h */,
 				20F053BD1D27D15300BEC58D /* kpRectangle.m */,
+				20F053E71D2A8A8100BEC58D /* kpCircle.h */,
+				20F053E81D2A8A8100BEC58D /* kpCircle.m */,
+				20F053EA1D2A8A9200BEC58D /* kpTriangle.h */,
+				20F053EB1D2A8A9200BEC58D /* kpTriangle.m */,
+				20F053E41D2A81FD00BEC58D /* kpGraphicObject.h */,
+				20F053E51D2A81FD00BEC58D /* kpGraphicObject.m */,
 				20F053BF1D27D20D00BEC58D /* kpSquare.h */,
 				20F053C01D27D20D00BEC58D /* kpSquare.m */,
 				20F053C51D28319300BEC58D /* kpXYZpoints.h */,
@@ -134,9 +149,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F053C11D27D20D00BEC58D /* kpSquare.m in Sources */,
+				20F053EC1D2A8A9200BEC58D /* kpTriangle.m in Sources */,
 				20F053BE1D27D15300BEC58D /* kpRectangle.m in Sources */,
+				20F053E91D2A8A8100BEC58D /* kpCircle.m in Sources */,
 				20BB83D01D197AFF00F016D2 /* main.m in Sources */,
 				20F053C71D28319300BEC58D /* kpXYZpoints.m in Sources */,
+				20F053E61D2A81FD00BEC58D /* kpGraphicObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

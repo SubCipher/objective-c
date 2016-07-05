@@ -10,13 +10,10 @@
 
 @interface kpXYZpoints : NSObject
 
+@property float x,y;
 
--(void) setX: (int) xVal andY: (int) yVal;
-
-
--(int) x;
--(int) y;
-
-
-
+-(void) setX: (float) xVal andY: (float) yVal;
+//
+//-(int) x;
+//-(int) y;
 @end
