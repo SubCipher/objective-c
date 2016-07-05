@@ -7,10 +7,11 @@
 //
 
 #import "kpRectangle.h"
+#import "kpXYZpoints.h"
 
 @implementation kpRectangle{
     kpXYZpoints *origin;
-     kpXYZpoints *newVector;
+
     float width;
     float height;
    }
@@ -37,9 +38,10 @@
     return height;
 }
 
+
 -(void) setOrigin: (kpXYZpoints *) pt{
   
-    if( ! origin)
+    if( !origin)
         origin = [[kpXYZpoints alloc]init];
   
     origin.x = pt.x;
@@ -52,7 +54,6 @@
     
     [vector setX: 6 andY: 44];
 }
-
 
 -(kpXYZpoints *) origin{
     return origin;
@@ -90,6 +91,7 @@
         [origIntersectRect setX:0 andY:0.];
         [intersectRect setOrigin: origIntersectRect];
         [intersectRect setWidth:0 andHeight: 0.];
+        
         return intersectRect;
         
     }

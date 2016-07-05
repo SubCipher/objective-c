@@ -10,23 +10,27 @@
 #import "kpXYZpoints.h"
 #import "kpGraphicObject.h"
 
-@class kpXYZpoints;
 @interface kpRectangle: kpGraphicObject
+
+
+-(kpXYZpoints *) origin;
+-(kpRectangle *) intersect: (kpRectangle *) aRectangle;
+
+-(void) setOrigin: (kpXYZpoints *) pt;
+
+-(void) setWidth: (float) w andHeight: (float) h;
+-(void)translate: (kpXYZpoints *) vector;
+
 
 -(BOOL)containsPoint: (kpXYZpoints *) aPoint;
 
--(void) setWidth: (float) w andHeight: (float) h;
--(float) perimeter;
 -(float) width;
 -(float) height;
+-(float) perimeter;
 -(float) area;
 
 
--(kpXYZpoints *)  origin;
 
--(void) setOrigin: (kpXYZpoints *) pt;
--(void)translate: (kpXYZpoints *) vector;
--(kpRectangle *) intersect: (kpRectangle *) newAngle;
 
 
 @end

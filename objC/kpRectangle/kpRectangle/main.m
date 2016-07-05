@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "kpRectangle.h"
-#import "kpSquare.h"
-#import "kpXYZpoints.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -17,40 +15,26 @@ int main(int argc, const char * argv[]) {
         kpRectangle *myRectangle =[[kpRectangle alloc]init];
         [myRectangle setWidth:5 andHeight: 8];
         
-//
-//        NSLog(@"rectangle perimeter = %f",[myRectangle perimeter]);
-//        NSLog(@"rectangle area = %f",[myRectangle area]);
-//        NSLog(@"\n\n");
-//        
-//        
-//        kpSquare *mySquare = [[kpSquare alloc]init];
-//        [mySquare setSide: 5];
-//        NSLog(@"Square s = %f", mySquare.side);
-//        NSLog(@"Area = %f, Perimeter = %f", [mySquare area], [mySquare perimeter]);
-//        NSLog(@"\n\n");
-//        
-//        
-        kpRectangle *myRect = [[kpRectangle alloc]init];
-        kpXYZpoints *myPoint = [[kpXYZpoints alloc]init];
+        kpRectangle *myRect00 = [[kpRectangle alloc]init];
+        kpRectangle *myRect01 = [[kpRectangle alloc]init];
+        
+        kpXYZpoints *myPoint00 = [[kpXYZpoints alloc]init];
+        kpXYZpoints *myPoint01 = [[kpXYZpoints alloc]init];
+        
+        [myPoint00 setX: 200 andY: 420];
+        [myPoint01 setX: 400 andY:300];
+        
+        [myRect00 setWidth: 250 andHeight: 175];
+        [myRect01 setWidth: 100 andHeight: 180];
+        
+        [myRect00 setOrigin: myPoint00];
+        [myRect01 setOrigin: myPoint01];
         
         
-        [myPoint setX: 200 andY:420];
-        [myRect setWidth: 250 andHeight: 175];
-        myRect.origin = myPoint;
-        [myRect translate: myPoint];
-         myRect.origin = myPoint;
-        [myRect intersect: myRect];
-        
-//        NSLog(@"Rectangle w = %f, h = %f", myRect.width, myRect.height);
-//        NSLog(@"Origin at (%f, %f)", myRect.origin.x, myRect.origin.y);
-//        
-//        NSLog(@"Area = %f, Perimeter = %f",[myRect area], [myRect perimeter]);
-//        [myPoint setX: 150 andY:150];
-//       
-//        
-//        NSLog(@"Origin at (%f, %f)", myRect.origin.x, myRect.origin.y);
-        
-        NSLog(@"intersec results: %@", [myRect intersect: myRect]);
+        kpRectangle *inter;
+        inter = [myRect00 intersect: myRect01];
+
+        NSLog(@"intersec results: w %.2f h %.2f orgi(%.2f,%.2f)",inter.width,inter.height,inter.origin.x,inter.origin.y);
         
         
     }

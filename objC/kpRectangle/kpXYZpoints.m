@@ -8,14 +8,19 @@
 
 #import "kpXYZpoints.h"
 
-@implementation kpXYZpoints
+@implementation kpXYZpoints{
+    kpXYZpoints *origin;
+}
 
 @synthesize x,y;
+
 
 -(void) setX: (float) setX andY: (float) yVal{
     
     x = setX;
     y = yVal;
 }
+
+
 
 @end
