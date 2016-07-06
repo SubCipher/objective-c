@@ -64,6 +64,25 @@
 
 }
 
+-(void)draw: (kpRectangle *) drawThis {
+    int i;
+    for(i =0 ; i < drawThis.width; i++){
+        printf("-");
+    }
+    
+    for(i =0 ; i < drawThis.height; i++){
+        printf("|                        |\n");
+    }
+    
+    for(i =0 ; i < drawThis.width; i++){
+        printf("-");
+    }
+    
+
+
+}
+
+
 -(kpRectangle *) intersect: (kpRectangle *) aRectangle{
     
     kpRectangle *intersectRect = [[kpRectangle alloc ]init];
@@ -95,27 +114,6 @@
         return intersectRect;
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     return aRectangle;
 }
 

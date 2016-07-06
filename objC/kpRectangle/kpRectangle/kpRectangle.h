@@ -20,7 +20,7 @@
 
 -(void) setWidth: (float) w andHeight: (float) h;
 -(void)translate: (kpXYZpoints *) vector;
-
+-(void)draw: (kpRectangle *) drawThis;
 
 -(BOOL)containsPoint: (kpXYZpoints *) aPoint;
 

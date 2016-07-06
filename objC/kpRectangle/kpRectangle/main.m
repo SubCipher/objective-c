@@ -24,17 +24,19 @@ int main(int argc, const char * argv[]) {
         [myPoint00 setX: 200 andY: 420];
         [myPoint01 setX: 400 andY:300];
         
-        [myRect00 setWidth: 250 andHeight: 175];
-        [myRect01 setWidth: 100 andHeight: 180];
+        [myRect00 setWidth: 25 andHeight: 17];
+        [myRect01 setWidth: 10 andHeight: 18];
         
         [myRect00 setOrigin: myPoint00];
         [myRect01 setOrigin: myPoint01];
         
         
-        kpRectangle *inter;
-        inter = [myRect00 intersect: myRect01];
+        kpRectangle *interSAngle;
+        interSAngle = [myRect00 intersect: myRect01];
 
-        NSLog(@"intersec results: w %.2f h %.2f orgi(%.2f,%.2f)",inter.width,inter.height,inter.origin.x,inter.origin.y);
+        NSLog(@"intersec results: w %.2f h %.2f orgi(%.2f,%.2f)",interSAngle.width,interSAngle.height,interSAngle.origin.x,interSAngle.origin.y);
+        
+        [interSAngle draw: myRect00];
         
         
     }
