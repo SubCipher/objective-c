@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		20BB83BD1D18772600F016D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB83BC1D18772600F016D2 /* main.m */; };
+		20F054081D2CB65A00BEC58D /* kpComplex.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F054071D2CB65A00BEC58D /* kpComplex.m */; };
+		20F0540B1D2CF3FC00BEC58D /* kpFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F0540A1D2CF3FC00BEC58D /* kpFraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		20BB83B91D18772600F016D2 /* kpComplex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kpComplex; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BB83BC1D18772600F016D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20F054061D2CB65A00BEC58D /* kpComplex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpComplex.h; sourceTree = "<group>"; };
+		20F054071D2CB65A00BEC58D /* kpComplex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpComplex.m; sourceTree = "<group>"; };
+		20F054091D2CF3FC00BEC58D /* kpFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpFraction.h; sourceTree = "<group>"; };
+		20F0540A1D2CF3FC00BEC58D /* kpFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpFraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				20BB83BC1D18772600F016D2 /* main.m */,
+				20F054091D2CF3FC00BEC58D /* kpFraction.h */,
+				20F0540A1D2CF3FC00BEC58D /* kpFraction.m */,
+				20F054061D2CB65A00BEC58D /* kpComplex.h */,
+				20F054071D2CB65A00BEC58D /* kpComplex.m */,
 			);
 			path = kpComplex;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F0540B1D2CF3FC00BEC58D /* kpFraction.m in Sources */,
 				20BB83BD1D18772600F016D2 /* main.m in Sources */,
+				20F054081D2CB65A00BEC58D /* kpComplex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +251,7 @@
 				20BB83C21D18772600F016D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

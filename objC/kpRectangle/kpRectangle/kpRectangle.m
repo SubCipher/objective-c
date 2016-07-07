@@ -77,11 +77,8 @@
     for(i =0 ; i < drawThis.width; i++){
         printf("-");
     }
-    
-
 
 }
-
 
 -(kpRectangle *) intersect: (kpRectangle *) aRectangle{
     

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "kpRectangle.h"
+#import "kpSquare.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -35,8 +36,11 @@ int main(int argc, const char * argv[]) {
         interSAngle = [myRect00 intersect: myRect01];
 
         NSLog(@"intersec results: w %.2f h %.2f orgi(%.2f,%.2f)",interSAngle.width,interSAngle.height,interSAngle.origin.x,interSAngle.origin.y);
-        
+         NSLog(@"\n\n");
         [interSAngle draw: myRect00];
+        NSLog(@"\n\n");
+        char *result = [kpSquare class] == [kpSquare class] ? "YES" : "NO";
+            NSLog(@"are the classes the same? %s", result);
         
         
     }
