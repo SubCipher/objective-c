@@ -22,7 +22,9 @@ int main(int argc, const char * argv[]) {
 //        [myFraction setNumerator: 5 andDenominator: 12];
 //        [myFraction print];
 
-        id dataValue;
+        id dataValue00;
+        id dataValue01;
+        id result;
         
         kpFraction *f1 = [[kpFraction alloc] init];
         kpFraction *f2 = [[kpFraction alloc] init];
@@ -46,16 +48,19 @@ int main(int argc, const char * argv[]) {
         [c1 print]; NSLog(@"        +"); [c2 print];
         NSLog (@"------------------");
         //compResult = [c1 add: c2];
-        dataValue = [c1 add: c2];
-        [dataValue print];
+        dataValue00 = [c1 add: c2];
+        [dataValue00 print];
         
         [f1 print]; NSLog (@"       +"); [f2 print];
         NSLog(@"----------");
         //fracResult = [f1 add: f2];
-        dataValue = [f1 add: f2];
+      
+        dataValue00 = f1 ;
+        dataValue01 = f2;
+        result = [dataValue00 add:  dataValue01];
         //store result in id data type
         
-        [dataValue print];
+        [result print];
         
         
             }
