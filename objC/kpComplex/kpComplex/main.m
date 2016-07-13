@@ -58,11 +58,7 @@ int main(int argc, const char * argv[]) {
         dataValue00 = f1 ;
         dataValue01 = f2;
         result = [dataValue00 add:  dataValue01];
-        //store result in id data type
-        
-        [result print];
-        
-        
+                
             }
     return 0;
 }

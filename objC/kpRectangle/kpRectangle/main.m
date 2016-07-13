@@ -42,6 +42,45 @@ int main(int argc, const char * argv[]) {
         char *result = [kpSquare class] == [kpSquare class] ? "YES" : "NO";
             NSLog(@"are the classes the same? %s", result);
         
+        kpSquare *mySquare = [[kpSquare alloc] init];
+        
+        //isMemberOf:
+        if( [mySquare isMemberOfClass: [kpSquare class]] == YES )
+            NSLog (@"mySquare is a member of Square calss");
+        
+        if( [mySquare isMemberOfClass: [kpRectangle class]] == YES )
+         NSLog (@"mySquare is a member of Rectangle calss");
+        
+        if( [mySquare isMemberOfClass: [NSObject class]] == YES )
+             NSLog (@"mySquare is a member of NSObject calss");
+        
+        //isKindOf
+        
+        if( [mySquare isKindOfClass: [kpSquare class ]] == YES )
+            NSLog (@"mySquare is kind of Square");
+        
+        if( [mySquare isKindOfClass: [kpRectangle class ]] == YES )
+            NSLog (@"mySquare is kind of Rectangle");
+
+        if( [mySquare isKindOfClass: [NSObject class ]] == YES )
+            NSLog (@"mySquare is kind of NSObject");
+
+        
+        //respondsTo
+        
+        if( [mySquare respondsToSelector: @selector (setSide:)] == YES )
+            NSLog (@"mySquare responds to setSide: method");
+
+        
+        if( [mySquare respondsToSelector: @selector (setWidth:andHeight:)] == YES )
+            NSLog (@"mySquare responds to setWidth:andHeight");
+        
+        
+        if( [mySquare respondsToSelector: @selector (alloc)] == YES )
+            NSLog (@"mySquare responds to alloc method");
+        
+                
+        
         
     }
     return 0;

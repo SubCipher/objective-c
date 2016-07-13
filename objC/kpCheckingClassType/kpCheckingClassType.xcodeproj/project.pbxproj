@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		20F0541C1D34A04900BEC58D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F0541B1D34A04900BEC58D /* main.m */; };
+		20F054271D34AA6800BEC58D /* kpForms.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F054261D34AA6800BEC58D /* kpForms.m */; };
+		20F0542A1D351F9D00BEC58D /* kpColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F054291D351F9D00BEC58D /* kpColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		20F054181D34A04900BEC58D /* kpCheckingClassType */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kpCheckingClassType; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F0541B1D34A04900BEC58D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20F054251D34AA6800BEC58D /* kpForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kpForms.h; path = ../kpForms.h; sourceTree = "<group>"; };
+		20F054261D34AA6800BEC58D /* kpForms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = kpForms.m; path = ../kpForms.m; sourceTree = "<group>"; };
+		20F054281D351F9D00BEC58D /* kpColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpColors.h; sourceTree = "<group>"; };
+		20F054291D351F9D00BEC58D /* kpColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpColors.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		20F0541A1D34A04900BEC58D /* kpCheckingClassType */ = {
 			isa = PBXGroup;
 			children = (
+				20F054251D34AA6800BEC58D /* kpForms.h */,
+				20F054261D34AA6800BEC58D /* kpForms.m */,
 				20F0541B1D34A04900BEC58D /* main.m */,
+				20F054281D351F9D00BEC58D /* kpColors.h */,
+				20F054291D351F9D00BEC58D /* kpColors.m */,
 			);
 			path = kpCheckingClassType;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F0542A1D351F9D00BEC58D /* kpColors.m in Sources */,
+				20F054271D34AA6800BEC58D /* kpForms.m in Sources */,
 				20F0541C1D34A04900BEC58D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +251,7 @@
 				20F054211D34A04900BEC58D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
