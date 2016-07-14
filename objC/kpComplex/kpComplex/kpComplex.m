@@ -17,7 +17,7 @@
 }
 
 -(void)print{
-    NSLog(@"display comlplex number: %g + %gi",real,imaginary);
+    NSLog(@"display complex number: %g + %gi",real,imaginary);
 }
 
 //-(void) setReal: (double) a andImaginary: (double) b{

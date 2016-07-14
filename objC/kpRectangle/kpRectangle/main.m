@@ -79,8 +79,10 @@ int main(int argc, const char * argv[]) {
         if( [mySquare respondsToSelector: @selector (alloc)] == YES )
             NSLog (@"mySquare responds to alloc method");
         
-                
-        
+        id dataValue = [[kpRectangle alloc] init];
+       
+        [myPoint00 printPoints];
+               
         
     }
     return 0;

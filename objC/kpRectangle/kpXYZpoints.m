@@ -15,6 +15,10 @@
 @synthesize x,y;
 
 
+-(void) printPoints {
+    NSLog(@"x = %g and y = %g",x,y);
+}
+
 -(void) setX: (float) setX andY: (float) yVal{
     
     x = setX;

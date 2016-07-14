@@ -22,6 +22,10 @@
 @property int numerator, denominator, wholeNumber;
 
 
++(kpFraction *) allocF;
++(int) count;
+
+
 -(void) print;
 -(double) convertToNum;
 -(void)setTo: (int)n over: (int)d;

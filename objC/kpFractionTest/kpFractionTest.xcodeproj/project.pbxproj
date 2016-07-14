@@ -15,6 +15,7 @@
 		20F0539C1D26143D00BEC58D /* kpFractionTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F0539B1D26143D00BEC58D /* kpFractionTestTests.m */; };
 		20F053A71D26143D00BEC58D /* kpFractionTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053A61D26143D00BEC58D /* kpFractionTestUITests.m */; };
 		20F053BB1D2617CC00BEC58D /* kpFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053BA1D2617CC00BEC58D /* kpFraction.m */; };
+		20F054461D36DFD700BEC58D /* kpEmonths.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F054451D36DFD700BEC58D /* kpEmonths.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		20F0537E1D26143C00BEC58D /* kpFractionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpFractionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		20F053821D26143D00BEC58D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20F053821D26143D00BEC58D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = kpFractionTest/main.m; sourceTree = "<group>"; };
 		20F053841D26143D00BEC58D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20F053851D26143D00BEC58D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		20F0538B1D26143D00BEC58D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,8 +50,10 @@
 		20F053A21D26143D00BEC58D /* kpFractionTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kpFractionTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F053A61D26143D00BEC58D /* kpFractionTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kpFractionTestUITests.m; sourceTree = "<group>"; };
 		20F053A81D26143D00BEC58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20F053B91D2617CC00BEC58D /* kpFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kpFraction.h; path = ../kpFraction.h; sourceTree = "<group>"; };
-		20F053BA1D2617CC00BEC58D /* kpFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = kpFraction.m; path = ../kpFraction.m; sourceTree = "<group>"; };
+		20F053B91D2617CC00BEC58D /* kpFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpFraction.h; sourceTree = "<group>"; };
+		20F053BA1D2617CC00BEC58D /* kpFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpFraction.m; sourceTree = "<group>"; };
+		20F054441D36DFD700BEC58D /* kpEmonths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpEmonths.h; sourceTree = SOURCE_ROOT; };
+		20F054451D36DFD700BEC58D /* kpEmonths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpEmonths.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,11 @@
 		20F053751D26143C00BEC58D = {
 			isa = PBXGroup;
 			children = (
+				20F053B91D2617CC00BEC58D /* kpFraction.h */,
+				20F053BA1D2617CC00BEC58D /* kpFraction.m */,
+				20F054441D36DFD700BEC58D /* kpEmonths.h */,
+				20F054451D36DFD700BEC58D /* kpEmonths.m */,
+				20F053821D26143D00BEC58D /* main.m */,
 				20F053801D26143D00BEC58D /* kpFractionTest */,
 				20F0539A1D26143D00BEC58D /* kpFractionTestTests */,
 				20F053A51D26143D00BEC58D /* kpFractionTestUITests */,
@@ -101,10 +109,6 @@
 		20F053801D26143D00BEC58D /* kpFractionTest */ = {
 			isa = PBXGroup;
 			children = (
-				20F053841D26143D00BEC58D /* AppDelegate.h */,
-				20F053B91D2617CC00BEC58D /* kpFraction.h */,
-				20F053BA1D2617CC00BEC58D /* kpFraction.m */,
-				20F053851D26143D00BEC58D /* AppDelegate.m */,
 				20F0538A1D26143D00BEC58D /* Main.storyboard */,
 				20F0538D1D26143D00BEC58D /* Assets.xcassets */,
 				20F0538F1D26143D00BEC58D /* LaunchScreen.storyboard */,
@@ -117,7 +121,8 @@
 		20F053811D26143D00BEC58D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				20F053821D26143D00BEC58D /* main.m */,
+				20F053841D26143D00BEC58D /* AppDelegate.h */,
+				20F053851D26143D00BEC58D /* AppDelegate.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				20F053BB1D2617CC00BEC58D /* kpFraction.m in Sources */,
 				20F053861D26143D00BEC58D /* AppDelegate.m in Sources */,
 				20F053831D26143D00BEC58D /* main.m in Sources */,
+				20F054461D36DFD700BEC58D /* kpEmonths.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +505,7 @@
 				20F053AD1D26143D00BEC58D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20F053AE1D26143D00BEC58D /* Build configuration list for PBXNativeTarget "kpFractionTestTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +514,7 @@
 				20F053B01D26143D00BEC58D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20F053B11D26143D00BEC58D /* Build configuration list for PBXNativeTarget "kpFractionTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +523,7 @@
 				20F053B31D26143D00BEC58D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

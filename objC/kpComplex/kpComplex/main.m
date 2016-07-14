@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "kpComplex.h"
 #import "kpFraction.h"
+#import "kpXYPoints.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -58,7 +59,13 @@ int main(int argc, const char * argv[]) {
         dataValue00 = f1 ;
         dataValue01 = f2;
         result = [dataValue00 add:  dataValue01];
-                
+        [result reduce];
+        
+        kpXYPoints *testPoints = [[kpXYPoints alloc]init];
+        
+        [testPoints setPoints: 4.5 setY: 5.5];
+        dataValue00 = testPoints;
+        [dataValue00 printPoints];
             }
     return 0;
 }

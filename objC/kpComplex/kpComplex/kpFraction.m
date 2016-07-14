@@ -34,7 +34,7 @@
     
     results.numerator = numerator * f.denominator + denominator * f.numerator;
     results.denominator = denominator * f.denominator;
-    [results reduce];
+    //[results reduce];
     return results;
     
 }
