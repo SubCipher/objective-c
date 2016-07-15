@@ -35,7 +35,7 @@ switch (_amonth){
         
     case april:
     case june:
-    //case july:
+    case july:
     case september:
     case november:
         _days = 30;

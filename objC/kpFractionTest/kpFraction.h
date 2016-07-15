@@ -25,6 +25,8 @@
 +(kpFraction *) allocF;
 +(int) count;
 
+-(instancetype) init;
+-(instancetype) initWith: (int) n over: (int) d;
 
 -(void) print;
 -(double) convertToNum;

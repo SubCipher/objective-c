@@ -13,31 +13,31 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-//        kpFraction *aFraction = [[kpFraction alloc] init];
-//        kpFraction *bFraction = [[kpFraction alloc]init];
-//        kpFraction *resultFraction;
-//        
-//        [aFraction setTo:3 over:5];
-//        [bFraction setTo:1 over:2];
-//        [aFraction print];
-//         NSLog(@"*");
-//        [bFraction print];
-//        NSLog(@"=");
-//        
-//        resultFraction = [aFraction multiply:bFraction];
-//        [resultFraction print];
-//        
-//        
-//        kpFraction *a,*b, *c;
-//        
-//       
-//        
-//        a = [[kpFraction allocF]init];
-//        b = [[kpFraction allocF]init];
-//        c = [[kpFraction allocF]init];
-//        
-//        NSLog (@"Fractions allocated: %i",[kpFraction count]);
-//        NSLog(@"Fractions allocated %i",[kpFraction count]);
+        kpFraction *aFraction = [[kpFraction alloc] init];
+        kpFraction *bFraction = [[kpFraction alloc]init];
+        kpFraction *resultFraction;
+        
+        [aFraction setTo:3 over:5];
+        [bFraction setTo:1 over:2];
+        [aFraction print];
+         NSLog(@"*");
+        [bFraction print];
+        NSLog(@"=");
+        
+        resultFraction = [aFraction multiply:bFraction];
+        [resultFraction print];
+        
+        
+        kpFraction *a,*b, *c;
+        
+       
+        
+        a = [[kpFraction allocF]init];
+        b = [[kpFraction allocF]init];
+        c = [[kpFraction allocF]init];
+        
+        NSLog (@"Fractions allocated: %i",[kpFraction count]);
+        NSLog(@"Fractions allocated %i",[kpFraction count]);
         
         kpEmonths *myEmonths = [[kpEmonths alloc] init];
         
@@ -47,6 +47,16 @@ int main(int argc, const char * argv[]) {
         [myEmonths setMonth: 7];
         [myEmonths takeAmonth];
  
+        
+        kpFraction *a1, *b1;
+        
+        a1 = [[kpFraction alloc] initWith: 1 over: 3];
+        b1 = [[kpFraction alloc] initWith: 3 over: 7];
+        
+        
+        [a1 print];
+        [b1 print];
+        
         
                    }
     return 0;

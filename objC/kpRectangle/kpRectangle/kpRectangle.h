@@ -29,7 +29,7 @@
 -(float) perimeter;
 -(float) area;
 
-
+-(id)initWithWidt: (int) w andHeight: (int) h;
 
 
 

@@ -115,4 +115,17 @@
 }
 
 
+
+
+-(instancetype)initWithWidth: (int) w andHeight: (int) h
+    {
+        self = [super init];
+        if (self){
+            width = w;
+            height = h;
+            
+        
+    }
+    return self;
+    }
 @end

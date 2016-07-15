@@ -31,7 +31,22 @@ static int gCounter;
     return gCounter;
 }
 
+-(instancetype) init{
+    self = [super init];
+    
+    return [self initWith: 0 over: 0];
+}
 
+
+
+-(instancetype) initWith: (int) n over: (int) d
+{
+    self = [super init];
+    if(self)
+        [self setTo: n over: d];
+
+    return self;
+}
 
 
 -(void) print{
