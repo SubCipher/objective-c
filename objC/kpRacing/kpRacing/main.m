@@ -7,19 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "kpCar.h"
+
+
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-    
-        int worldRecord =9  ;
-        int playersRaceTime = 0;
-    
         
+        kpCar *myCar = [[kpCar alloc]init];
+        NSLog(@"car top speed is: %i",myCar.topSpeed);
 
-        for(int i =0; i < 3; ++i ){
-            playersRaceTime = playersRaceTime + arc4random() %7;
-        }
+        myCar.topSpeed =100;
+        NSLog(@"car top speed is: %i",myCar.topSpeed);
+
         
+        int worldRecord = 4  ;
+        int playersRaceTime = [myCar totalRaceTime];
+    
         NSLog(@"you completed the race in %i minutes",playersRaceTime);
         
         if (playersRaceTime >= worldRecord && playersRaceTime >= worldRecord +2){
