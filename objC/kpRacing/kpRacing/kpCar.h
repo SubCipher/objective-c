@@ -10,11 +10,12 @@
 
 @interface kpCar : NSObject
 
-@property int topSpeed;
 
 /*returns time it took a car to complete a race and this is a multi line 
  comment about it
 */
+
+-(id)initWithTopSpeed:(int)speed;
 
  -(int) totalRaceTime;
 

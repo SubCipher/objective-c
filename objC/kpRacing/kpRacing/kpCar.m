@@ -8,7 +8,26 @@
 
 #import "kpCar.h"
 
+@interface kpCar ()
+//private interface section
+
+@property int topSpeed;
+
+@end
+
 @implementation kpCar
+
+-(id)initWithTopSpeed:(int)speed{
+    
+    self = [super init];
+    
+    if(self) {
+        _topSpeed = speed;
+        
+          }
+    return self;
+
+}
 
 -(int)totalRaceTime{
     

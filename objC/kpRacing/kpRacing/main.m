@@ -11,17 +11,11 @@
 
 
 
-
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        kpCar *myCar = [[kpCar alloc]init];
-        NSLog(@"car top speed is: %i",myCar.topSpeed);
-
-        myCar.topSpeed =100;
-        NSLog(@"car top speed is: %i",myCar.topSpeed);
-
-        
+        kpCar *myCar = [[kpCar alloc]initWithTopSpeed:100];
+       
         int worldRecord = 4  ;
         int playersRaceTime = [myCar totalRaceTime];
     
