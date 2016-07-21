@@ -12,10 +12,13 @@
 //private interface section
 
 @property int topSpeed;
+@property NSArray * lapTimes;
 
 @end
 
 @implementation kpCar
+
+
 
 -(id)initWithTopSpeed:(int)speed{
     
@@ -31,11 +34,25 @@
 
 -(int)totalRaceTime{
     
+    self.lapTimes = [NSArray array];
+    
     int totalRaceTime = 0;
     for (int i = 1; i <= 3; i++){
+    
         
-        int currentLapTime = (arc4random() %4) /(_topSpeed / 100);
+        int currentLapTime = 0;
+        
+        
+        while (currentLapTime == 0){
+            
+        currentLapTime = (arc4random() %4) /(_topSpeed / 100);
+            
+            
+        }
         totalRaceTime += currentLapTime;
+        
+        NSNumber * lapTimeObject = @(currentLapTime);
+        self.lapTimes = [_lapTimes arrayByAddingObject:lapTimeObject];
         
         
     }

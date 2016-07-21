@@ -20,6 +20,12 @@ int main(int argc, const char * argv[]) {
         int playersRaceTime = [myCar totalRaceTime];
     
         NSLog(@"you completed the race in %i minutes",playersRaceTime);
+        NSLog(@"your lap times were: ");
+        
+        for  (NSNumber * aNumber in myCar.lapTimes)
+        {
+            NSLog(@"%i minutes",aNumber.intValue);
+        }
         
         if (playersRaceTime >= worldRecord && playersRaceTime >= worldRecord +2){
             //they beat world record

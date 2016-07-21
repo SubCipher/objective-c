@@ -10,6 +10,8 @@
 
 @interface kpCar : NSObject
 
+@property (readonly) NSArray * lapTimes;
+
 
 /*returns time it took a car to complete a race and this is a multi line 
  comment about it
