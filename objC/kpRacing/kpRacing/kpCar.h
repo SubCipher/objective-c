@@ -10,16 +10,13 @@
 
 @interface kpCar : NSObject
 
-@property (readonly) NSArray * lapTimes;
+@property (readonly) NSArray * lapTimes; //crate read only public access for lapTimes NSArray
 
 
-/*returns time it took a car to complete a race and this is a multi line 
- comment about it
-*/
 
--(id)initWithTopSpeed:(int)speed;
+-(id)initWithTopSpeed:(int)speed; //custom init public interface for topSpeed
 
- -(int) totalRaceTime;
+-(int) totalRaceTime; //public declaration for object
 
  
 
