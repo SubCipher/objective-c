@@ -9,32 +9,44 @@
 #import "kpRace.h"
 #import "kpCar.h"
 
+/*private interface */
+
 @interface kpRace()
 
-
-
+@property NSString *  trackName;
 @property NSDictionary * carsDictionary; //instance array
 
 -(NSDictionary *)calculateRaceTimesForCars;
 
 @end;
 
+/*end private interface */
+
 
 @implementation kpRace
 
--(id)initWithPlayerNames:  (NSArray *)playerNamesArray{ //custom initializer w/ array as argument
-    self = [super init]; // assign init super class properties to self
+//custom initializer w/ array as argument called by main.m
+
+-(id)initWithPlayerNames: (NSArray *)playerNamesArray trackName:(NSString *) theTrackName{
     
-    if(self){ // check for proper initialized self that inherits init properties
+    
+    self = [super init]; // assign init super class properties to self
+    _trackName = theTrackName; //set trackName
+    
+    if(self){ // check for proper initialized self
         
+        //custom init function
+        //create a mutable dictionary and create a pointer to it call *mutableCarsDictionary
+        NSMutableDictionary *mutableCarsDictionary = [NSMutableDictionary dictionary];
         
-        NSMutableDictionary *mutableCarsDictionary = [NSMutableDictionary dictionary];//create pointer to dictionary
+    
         
         for (NSString * name in playerNamesArray){
         
             int randomSpeed = (arc4random() %50) +100;
             
-            kpCar * raceCar = [[kpCar alloc]initWithTopSpeed:randomSpeed]; //create kpCar instance and initialize w/topSpeed
+            //create instance of kpCar allocate mem space and use kpCar custom init (See kpCar.h/kpCar.m
+            kpCar * raceCar = [[kpCar alloc]initWithTopSpeed:randomSpeed];
             [mutableCarsDictionary setObject:raceCar forKey:name];
             
             
@@ -66,6 +78,7 @@
     SEL compareSelector = @selector (compare:);
     NSArray * sortedKeys = [timesDictionary keysSortedByValueUsingSelector:compareSelector];
     
+    NSLog(@"Race results for %@...",_trackName);
     for(int i = 0; i < [sortedKeys count]; i++)
     {
         NSString * playerNames = sortedKeys[i];

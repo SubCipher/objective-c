@@ -10,7 +10,9 @@
 
 @interface kpRace : NSObject
 
--(id)initWithPlayerNames: (NSArray *)playerNames;
+@property (readonly) NSString * trackName;
+
+-(id)initWithPlayerNames: (NSArray *)playerNamesArray trackName:(NSString *) theTrackName ;
 
 -(void) race;
 

@@ -10,6 +10,7 @@
 		18A511601D3B3536009A7D73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A5115F1D3B3536009A7D73 /* main.m */; };
 		18A511681D3C7F25009A7D73 /* kpCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A511671D3C7F25009A7D73 /* kpCar.m */; };
 		18B90EB81D41225A0091C221 /* kpRace.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90EB71D41225A0091C221 /* kpRace.m */; };
+		18B90EBB1D429DFA0091C221 /* kpTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90EBA1D429DFA0091C221 /* kpTournament.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		18A511671D3C7F25009A7D73 /* kpCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpCar.m; sourceTree = "<group>"; };
 		18B90EB61D41225A0091C221 /* kpRace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpRace.h; sourceTree = "<group>"; };
 		18B90EB71D41225A0091C221 /* kpRace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpRace.m; sourceTree = "<group>"; };
+		18B90EB91D429DFA0091C221 /* kpTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpTournament.h; sourceTree = "<group>"; };
+		18B90EBA1D429DFA0091C221 /* kpTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpTournament.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				18A5115F1D3B3536009A7D73 /* main.m */,
+				18B90EB91D429DFA0091C221 /* kpTournament.h */,
+				18B90EBA1D429DFA0091C221 /* kpTournament.m */,
 				18A511661D3C7F25009A7D73 /* kpCar.h */,
 				18A511671D3C7F25009A7D73 /* kpCar.m */,
 				18B90EB61D41225A0091C221 /* kpRace.h */,
@@ -129,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A511601D3B3536009A7D73 /* main.m in Sources */,
+				18B90EBB1D429DFA0091C221 /* kpTournament.m in Sources */,
 				18A511681D3C7F25009A7D73 /* kpCar.m in Sources */,
 				18B90EB81D41225A0091C221 /* kpRace.m in Sources */,
 			);
