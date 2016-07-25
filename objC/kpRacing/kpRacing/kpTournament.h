@@ -10,7 +10,7 @@
 
 @interface kpTournament : NSObject
 
--(id)initWithTrackNames:(NSSet * )trackNameSet playerNames:(NSSet *) playerNamesSet;
+-(id)initWithTrackNames:(NSDictionary * )trackNameSet playerNames:(NSSet *) playerNamesSet;
 -(void)startTournament;
 
 

@@ -14,12 +14,15 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
     
-        //NSArray * playerNames = @[@"Peter", @"Pual",@"Jane",@"Jill"];
-        NSSet * playerNamesSet = [NSSet setWithObjects:@"Peter", @"Pual",@"Jane",@"Jill",nil];
-        NSSet * trackNamesSet = [NSSet setWithObjects:@"Silverstone", @"Hockenheimring",@"Laguna Seca", nil];
-        kpTournament * tournament = [[kpTournament alloc] initWithTrackNames:trackNamesSet playerNames:playerNamesSet];
+           NSSet * playerNamesSet = [NSSet setWithObjects:@"Peter", @"Pual",@"Jane",@"Jill",nil];
+           NSDictionary * tracksDictionary = @{@"Silverstone":@"Birmingham,UK",@"Hockenheimring":@"Hockenheim,de",@"Laguna Seca":@"Monterey,us"};
+        
+        kpTournament * tournament = [[kpTournament alloc] initWithTrackNames:tracksDictionary playerNames:playerNamesSet];
         
         [tournament startTournament];
+        
+        
+        
         
         
     }

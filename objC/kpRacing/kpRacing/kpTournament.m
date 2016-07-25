@@ -10,21 +10,24 @@
 #import "kpRace.h"
 @interface kpTournament ()
 
-@property NSSet *trackNames;
+//@property NSSet *trackNames;
 @property NSSet *playerNames;
+@property NSDictionary * tracksDictionary;
+
 
 
 @end
 
 @implementation kpTournament
 
--(id)initWithTrackNames:(NSSet *)trackNamesSet playerNames:(NSSet *)playerNamesSet{
+-(id)initWithTrackNames:(NSDictionary *)trackNamesDictionary playerNames:(NSSet *)playerNamesSet{
     
     self = [super init];
     
     if(self){
-        _trackNames = trackNamesSet;
-        _playerNames = playerNamesSet;
+        _tracksDictionary = trackNamesDictionary;
+       // _playerNames = playerNamesSet;
+        _playerNames = [[NSSet alloc] initWithSet:playerNamesSet copyItems:YES];
         
        
     }
@@ -35,12 +38,12 @@
 
 -(void)startTournament{
     
-    [_trackNames enumerateObjectsUsingBlock:^(NSString * trackName, BOOL *stop){
+    [_tracksDictionary enumerateKeysAndObjectsUsingBlock:^(NSString * trackName, NSString *locationName, BOOL *stop){
             
         NSArray * playerNamesArray = [_playerNames allObjects];
         
         
-        kpRace * race = [[kpRace alloc] initWithPlayerNames:playerNamesArray trackName:trackName];
+        kpRace * race = [[kpRace alloc] initWithPlayerNames:playerNamesArray trackName:trackName location:locationName];
         [race race];
         
         

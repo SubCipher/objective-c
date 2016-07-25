@@ -37,12 +37,10 @@
 
 -(id)initWithPlayerNames: (NSArray *)playerNamesArray trackName:(NSString *) theTrackName{
     
-    
     self = [super init]; // assign init super class properties to self
     
     if(self){ // check for proper initialized self
-        _trackName = theTrackName; //set trackName
-
+        _trackName = [theTrackName copy];
         
         //custom init function
         //create a mutable dictionary and create a pointer to it call *mutableCarsDictionary
@@ -60,6 +58,16 @@
         }
         _carsDictionary = [NSDictionary dictionaryWithDictionary: mutableCarsDictionary];
         
+    }
+    return self;
+}
+
+
+-(id)initWithPlayerNames: (NSArray *)playerNamesArray trackName:(NSString *) theTrackName location:(NSString *)theLocationName{
+    self = [self initWithPlayerNames:playerNamesArray trackName:theTrackName];
+    
+    if(self){
+        _location = [theLocationName copy];
     }
     return self;
 }
