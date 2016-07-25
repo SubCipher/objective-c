@@ -11,5 +11,7 @@
 @interface kpTournament : NSObject
 
 -(id)initWithTrackNames:(NSSet * )trackNameSet playerNames:(NSSet *) playerNamesSet;
+-(void)startTournament;
+
 
 @end

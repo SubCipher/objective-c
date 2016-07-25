@@ -13,8 +13,10 @@
 
 @interface kpRace()
 
-@property NSString *  trackName;
+
 @property NSDictionary * carsDictionary; //instance array
+@property NSString *  trackName;
+
 
 -(NSDictionary *)calculateRaceTimesForCars;
 
@@ -27,19 +29,24 @@
 
 //custom initializer w/ array as argument called by main.m
 
+//-(id)initWithPlayerNames:(NSArray *)playerNamesArray trackName:(NSString *)theTrackName location:(NSString *)theLocationName{
+//    return 0;
+//    
+//}
+
+
 -(id)initWithPlayerNames: (NSArray *)playerNamesArray trackName:(NSString *) theTrackName{
     
     
     self = [super init]; // assign init super class properties to self
-    _trackName = theTrackName; //set trackName
     
     if(self){ // check for proper initialized self
+        _trackName = theTrackName; //set trackName
+
         
         //custom init function
         //create a mutable dictionary and create a pointer to it call *mutableCarsDictionary
         NSMutableDictionary *mutableCarsDictionary = [NSMutableDictionary dictionary];
-        
-    
         
         for (NSString * name in playerNamesArray){
         
