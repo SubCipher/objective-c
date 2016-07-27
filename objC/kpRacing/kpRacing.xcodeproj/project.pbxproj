@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181FE0231D47815A009F89D7 /* NSURLConnection+ConnectionRequestSendingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FE0221D47815A009F89D7 /* NSURLConnection+ConnectionRequestSendingAdditions.m */; };
+		181FE02F1D47EE31009F89D7 /* Ferrari.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FE02E1D47EE31009F89D7 /* Ferrari.m */; };
 		18A511601D3B3536009A7D73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A5115F1D3B3536009A7D73 /* main.m */; };
 		18A511681D3C7F25009A7D73 /* kpCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A511671D3C7F25009A7D73 /* kpCar.m */; };
 		18B90EB81D41225A0091C221 /* kpRace.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B90EB71D41225A0091C221 /* kpRace.m */; };
@@ -26,6 +28,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		181FE0211D47815A009F89D7 /* NSURLConnection+ConnectionRequestSendingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+ConnectionRequestSendingAdditions.h"; sourceTree = "<group>"; };
+		181FE0221D47815A009F89D7 /* NSURLConnection+ConnectionRequestSendingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+ConnectionRequestSendingAdditions.m"; sourceTree = "<group>"; };
+		181FE02B1D47E5C0009F89D7 /* RacingClassCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacingClassCar.h; sourceTree = "<group>"; };
+		181FE02D1D47EE31009F89D7 /* Ferrari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ferrari.h; path = ../Ferrari.h; sourceTree = "<group>"; };
+		181FE02E1D47EE31009F89D7 /* Ferrari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ferrari.m; path = ../Ferrari.m; sourceTree = "<group>"; };
 		18A5115C1D3B3536009A7D73 /* kpRacing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kpRacing; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A5115F1D3B3536009A7D73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18A511661D3C7F25009A7D73 /* kpCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpCar.h; sourceTree = "<group>"; };
@@ -47,6 +54,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181FE0201D477AF4009F89D7 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				181FE0211D47815A009F89D7 /* NSURLConnection+ConnectionRequestSendingAdditions.h */,
+				181FE0221D47815A009F89D7 /* NSURLConnection+ConnectionRequestSendingAdditions.m */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
+		181FE02C1D47E5D3009F89D7 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				181FE02B1D47E5C0009F89D7 /* RacingClassCar.h */,
+			);
+			name = protocols;
+			sourceTree = "<group>";
+		};
 		18A511531D3B3536009A7D73 = {
 			isa = PBXGroup;
 			children = (
@@ -66,11 +90,15 @@
 		18A5115E1D3B3536009A7D73 /* kpRacing */ = {
 			isa = PBXGroup;
 			children = (
+				181FE02C1D47E5D3009F89D7 /* protocols */,
+				181FE0201D477AF4009F89D7 /* categories */,
 				18A5115F1D3B3536009A7D73 /* main.m */,
 				18B90EB91D429DFA0091C221 /* kpTournament.h */,
 				18B90EBA1D429DFA0091C221 /* kpTournament.m */,
 				18A511661D3C7F25009A7D73 /* kpCar.h */,
 				18A511671D3C7F25009A7D73 /* kpCar.m */,
+				181FE02D1D47EE31009F89D7 /* Ferrari.h */,
+				181FE02E1D47EE31009F89D7 /* Ferrari.m */,
 				18B90EB61D41225A0091C221 /* kpRace.h */,
 				18B90EB71D41225A0091C221 /* kpRace.m */,
 			);
@@ -134,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A511601D3B3536009A7D73 /* main.m in Sources */,
+				181FE02F1D47EE31009F89D7 /* Ferrari.m in Sources */,
 				18B90EBB1D429DFA0091C221 /* kpTournament.m in Sources */,
 				18A511681D3C7F25009A7D73 /* kpCar.m in Sources */,
+				181FE0231D47815A009F89D7 /* NSURLConnection+ConnectionRequestSendingAdditions.m in Sources */,
 				18B90EB81D41225A0091C221 /* kpRace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,7 +14,7 @@
 @property NSSet *playerNames;
 @property NSDictionary * tracksDictionary;
 
-
+-(void)printTournamentName;
 
 @end
 
@@ -28,40 +28,29 @@
         _tracksDictionary = trackNamesDictionary;
        // _playerNames = playerNamesSet;
         _playerNames = [[NSSet alloc] initWithSet:playerNamesSet copyItems:YES];
-        
-       
     }
     return self;
 }
 
-
-
 -(void)startTournament{
     
+    [self printTournamentName];
     [_tracksDictionary enumerateKeysAndObjectsUsingBlock:^(NSString * trackName, NSString *locationName, BOOL *stop){
             
         NSArray * playerNamesArray = [_playerNames allObjects];
         
-        
         kpRace * race = [[kpRace alloc] initWithPlayerNames:playerNamesArray trackName:trackName location:locationName];
         [race race];
-        
-        
         
     }];
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+-(void)printTournamentName{
+    
+    if(_tournamentName != nil)
+    {
+        NSLog(@"%@",_tournamentName);
+    }
+}
 
 @end

@@ -9,26 +9,23 @@
 #import "kpCar.h"
 
 @interface kpCar ()
-//private interface section
 
 @property int topSpeed; //overwrite topSpeed public interface w/a private declaration owned by .m file
 
-@property NSArray * lapTimes; //overwrith lapTime NSArray w/ private declartion owned by .m file
+@property NSArray * lapTimes; //overwrite lapTime NSArray w/ private declartion owned by .m file
 
 //end private interface section
 
 @end
 
-
 @implementation kpCar
 
-
--(id)initWithTopSpeed:(int)speed{ //custom init
+-(id)initWithTopSpeed:(int)speed{
     
     self = [super init]; //access parent class init "[super init]" and assign it's properties to self
     
     if(self) { //check self was properly constructed
-        _topSpeed = speed; //set topSpeed using "_" underscore setter method to write value
+        _topSpeed = speed;
         
           }
     return self;
@@ -38,7 +35,6 @@
 -(int)totalRaceTime{
     
     self.lapTimes = [NSArray array]; //assign NSarray to initialized self object (topSpeed) property
-    // self.lapTimes = (self in this context is the initalized topSpeed object
     
     int totalRaceTime = 0;
     for (int i = 1; i <= 3; i++){
@@ -54,11 +50,13 @@
         
         NSNumber * lapTimeObject = @(currentLapTime);
         self.lapTimes = [_lapTimes arrayByAddingObject:lapTimeObject];
-        
     }
     
     return totalRaceTime;
+}
 
+-(void)repair{
+    NSLog(@"Car has been repaired");
 }
 
 @end

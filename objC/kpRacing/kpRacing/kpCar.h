@@ -7,18 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RacingClassCar.h"
 
-@interface kpCar : NSObject
+@interface kpCar : NSObject <RacingClassCar>
 
-@property (readonly) NSArray * lapTimes; //crate read only public access for lapTimes NSArray
+@property (readonly) NSArray * lapTimes; //create read only public access for lapTimes NSArray
 
 
 
 -(id)initWithTopSpeed:(int)speed; //custom init public interface for topSpeed
 
 -(int) totalRaceTime; //public declaration for object
-
- 
 
 
 @end

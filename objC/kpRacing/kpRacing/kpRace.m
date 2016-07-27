@@ -8,6 +8,7 @@
 
 #import "kpRace.h"
 #import "kpCar.h"
+#import "NSURLConnection+ConnectionRequestSendingAdditions.h"
 
 /*private interface */
 
@@ -16,24 +17,20 @@
 
 @property NSDictionary * carsDictionary; //instance array
 @property NSString *  trackName;
+@property NSString * location;
 
 
 -(NSDictionary *)calculateRaceTimesForCars;
+
+-(NSString *)weatherString;
 
 @end;
 
 /*end private interface */
 
-
 @implementation kpRace
 
 //custom initializer w/ array as argument called by main.m
-
-//-(id)initWithPlayerNames:(NSArray *)playerNamesArray trackName:(NSString *)theTrackName location:(NSString *)theLocationName{
-//    return 0;
-//    
-//}
-
 
 -(id)initWithPlayerNames: (NSArray *)playerNamesArray trackName:(NSString *) theTrackName{
     
@@ -42,26 +39,24 @@
     if(self){ // check for proper initialized self
         _trackName = [theTrackName copy];
         
-        //custom init function
-        //create a mutable dictionary and create a pointer to it call *mutableCarsDictionary
         NSMutableDictionary *mutableCarsDictionary = [NSMutableDictionary dictionary];
         
         for (NSString * name in playerNamesArray){
-        
+            
+            //generate a random topSpeed for each item in playerNamesArray
             int randomSpeed = (arc4random() %50) +100;
             
-            //create instance of kpCar allocate mem space and use kpCar custom init (See kpCar.h/kpCar.m
+            //create instance of kpCar for each item in playNamesArray
             kpCar * raceCar = [[kpCar alloc]initWithTopSpeed:randomSpeed];
+            
+            
             [mutableCarsDictionary setObject:raceCar forKey:name];
-            
-            
         }
         _carsDictionary = [NSDictionary dictionaryWithDictionary: mutableCarsDictionary];
         
     }
     return self;
 }
-
 
 -(id)initWithPlayerNames: (NSArray *)playerNamesArray trackName:(NSString *) theTrackName location:(NSString *)theLocationName{
     self = [self initWithPlayerNames:playerNamesArray trackName:theTrackName];
@@ -71,7 +66,6 @@
     }
     return self;
 }
-
 
 -(NSDictionary *)calculateRaceTimesForCars{
     NSMutableDictionary * mutableTimesDictionary = [NSMutableDictionary dictionary];
@@ -86,62 +80,67 @@
     
 }
 
-
 -(void)race{
+    
     NSDictionary * timesDictionary = [self calculateRaceTimesForCars];
     
     SEL compareSelector = @selector (compare:);
     NSArray * sortedKeys = [timesDictionary keysSortedByValueUsingSelector:compareSelector];
     
     NSLog(@"Race results for %@...",_trackName);
+    
+    if(_location != nil){
+        NSString * weatherString = [self weatherString];
+        
+        if(weatherString != nil){
+            NSLog(@"Weather Report: %@",weatherString);
+            
+        }
+    }
+    
     for(int i = 0; i < [sortedKeys count]; i++)
     {
         NSString * playerNames = sortedKeys[i];
-        
         
         NSNumber * playersTime = timesDictionary[playerNames];
         
         NSLog(@"Position %i: %@ with a time of %i minutes",i + 1,playerNames,playersTime.intValue);
     }
     
-    
 }
+
+
+-(NSString *) weatherString{
+    
+    NSString * weatherURLString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?q=%@&APPID=9b6f7c096382c930edf02861f539efc4",_location];
+    
+    NSData *data = [NSURLConnection sendSynchronousRequestWithURLString:weatherURLString];
+    
+    NSString * weatherString = nil;
+    if (data != nil){
+        
+        NSDictionary * weatherDictionary = [NSJSONSerialization JSONObjectWithData:data
+                                                                           options: NSJSONReadingMutableContainers
+                                                                             error: nil];
+        
+        if (weatherDictionary != nil)
+        {
+            NSArray * weatherDescriptionArray = weatherDictionary[@"weather"];
+            
+            if([weatherDictionary count] > 0)
+            {
+                NSDictionary * weatherDescriptionDictionary = weatherDescriptionArray[0];
+                
+                NSString * mainDescription = weatherDescriptionDictionary[@"main"];
+                NSString * furtherDescription = weatherDescriptionDictionary[@"description"];
+                
+                weatherString = [NSString stringWithFormat:@"%@,%@",mainDescription, furtherDescription];
+                
+            }
+        
+        }
+    }
+    return weatherString;
+}
+
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

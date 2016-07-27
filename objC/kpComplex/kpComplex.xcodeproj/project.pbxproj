@@ -47,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181FE0241D47A588009F89D7 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
 		20BB83B01D18772600F016D2 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +73,7 @@
 		20BB83BB1D18772600F016D2 /* kpComplex */ = {
 			isa = PBXGroup;
 			children = (
+				181FE0241D47A588009F89D7 /* categories */,
 				20BB83BC1D18772600F016D2 /* main.m */,
 				20F0542B1D3671B700BEC58D /* kpXYPoints.h */,
 				20F0542C1D3671B700BEC58D /* kpXYPoints.m */,

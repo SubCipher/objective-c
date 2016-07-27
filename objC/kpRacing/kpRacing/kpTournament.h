@@ -10,8 +10,9 @@
 
 @interface kpTournament : NSObject
 
+@property (copy) NSString * tournamentName;
+
 -(id)initWithTrackNames:(NSDictionary * )trackNameSet playerNames:(NSSet *) playerNamesSet;
 -(void)startTournament;
-
 
 @end
