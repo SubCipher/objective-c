@@ -50,7 +50,7 @@
         
         NSNumber * lapTimeObject = @(currentLapTime);
         self.lapTimes = [_lapTimes arrayByAddingObject:lapTimeObject];
-    }
+            }
     
     return totalRaceTime;
 }

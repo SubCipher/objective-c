@@ -122,7 +122,6 @@
         NSDictionary * weatherDictionary = [NSJSONSerialization JSONObjectWithData:data
                                                                            options: NSJSONReadingMutableContainers
                                                                              error: nil];
-        
         if (weatherDictionary != nil)
         {
             NSArray * weatherDescriptionArray = weatherDictionary[@"weather"];

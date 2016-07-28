@@ -10,7 +10,7 @@
 #import "kpRace.h"
 @interface kpTournament ()
 
-//@property NSSet *trackNames;
+
 @property NSSet *playerNames;
 @property NSDictionary * tracksDictionary;
 
@@ -26,7 +26,6 @@
     
     if(self){
         _tracksDictionary = trackNamesDictionary;
-       // _playerNames = playerNamesSet;
         _playerNames = [[NSSet alloc] initWithSet:playerNamesSet copyItems:YES];
     }
     return self;
