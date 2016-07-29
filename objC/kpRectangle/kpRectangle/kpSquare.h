@@ -10,7 +10,9 @@
 
 @interface kpSquare: kpRectangle
 
+
 -(void)setSide: (float) s;
 -(float) side;
+-(id) initWithSide: (int) side;
 
 @end

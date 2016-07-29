@@ -11,6 +11,7 @@
 		181FE05B1D4874AC009F89D7 /* kpCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FE05A1D4874AC009F89D7 /* kpCar.m */; };
 		181FE05E1D48FD15009F89D7 /* kpRace.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FE05D1D48FD15009F89D7 /* kpRace.m */; };
 		182F85FC1D499E2700572C45 /* NSURLConnection+ConnectionRequestSendingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182F85FB1D499E2700572C45 /* NSURLConnection+ConnectionRequestSendingAdditions.m */; };
+		182F85FF1D49BA0700572C45 /* kpTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 182F85FE1D49BA0700572C45 /* kpTournament.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		181FE05D1D48FD15009F89D7 /* kpRace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpRace.m; sourceTree = "<group>"; };
 		182F85FA1D499E2700572C45 /* NSURLConnection+ConnectionRequestSendingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+ConnectionRequestSendingAdditions.h"; sourceTree = "<group>"; };
 		182F85FB1D499E2700572C45 /* NSURLConnection+ConnectionRequestSendingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+ConnectionRequestSendingAdditions.m"; sourceTree = "<group>"; };
+		182F85FD1D49BA0700572C45 /* kpTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpTournament.h; sourceTree = "<group>"; };
+		182F85FE1D49BA0700572C45 /* kpTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpTournament.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				181FE05A1D4874AC009F89D7 /* kpCar.m */,
 				181FE05C1D48FD15009F89D7 /* kpRace.h */,
 				181FE05D1D48FD15009F89D7 /* kpRace.m */,
+				182F85FD1D49BA0700572C45 /* kpTournament.h */,
+				182F85FE1D49BA0700572C45 /* kpTournament.m */,
 			);
 			path = Racing00;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182F85FF1D49BA0700572C45 /* kpTournament.m in Sources */,
 				181FE0501D48744B009F89D7 /* main.m in Sources */,
 				182F85FC1D499E2700572C45 /* NSURLConnection+ConnectionRequestSendingAdditions.m in Sources */,
 				181FE05B1D4874AC009F89D7 /* kpCar.m in Sources */,

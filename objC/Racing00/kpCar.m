@@ -41,7 +41,7 @@
         NSNumber * lapTimeObject =@(currentLapTime);
         
         self.lapTimes = [_lapTimes arrayByAddingObject:lapTimeObject];
-        NSLog(@"totalRaceTime is: %d",currentLapTime);
+        //NSLog(@"totalRaceTime is: %d",currentLapTime);
         
     }
    

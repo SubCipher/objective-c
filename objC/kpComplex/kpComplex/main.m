@@ -26,9 +26,12 @@ int main(int argc, const char * argv[]) {
         id dataValue00;
         id dataValue01;
         id result;
+        id result01;
+        id result02;
         
-        kpFraction *f1 = [[kpFraction alloc] init];
-        kpFraction *f2 = [[kpFraction alloc] init];
+        
+        kpFraction *f1 = [[kpFraction allocF] init];
+        kpFraction *f2 = [[kpFraction allocF] init];
         /* fracResult is replaced by id dataValue via Dynamic binding using id Type */
         //kpFraction *fracResult;
         
@@ -61,11 +64,15 @@ int main(int argc, const char * argv[]) {
         result = [dataValue00 add:  dataValue01];
         [result reduce];
         
+        result01 = [dataValue00 add: dataValue00];
         kpXYPoints *testPoints = [[kpXYPoints alloc]init];
         
         [testPoints setPoints: 4.5 setY: 5.5];
         dataValue00 = testPoints;
         [dataValue00 printPoints];
+        
+         NSLog(@"fractions allocated: %i",[kpFraction count]);
             }
+   
     return 0;
 }

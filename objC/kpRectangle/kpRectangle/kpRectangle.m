@@ -18,6 +18,16 @@
 
 //@synthesize width, height;
 
+-(id)initWithWidth: (int) w andHeight: (int) h{
+    self = [super init];
+    
+    if(self){
+        width = w;
+        height = h;
+        
+    }return self;
+}
+
 -(void) setWidth: (float) w andHeight: (float) h{
     width = w;
     height = h;
@@ -114,18 +124,4 @@
     return aRectangle;
 }
 
-
-
-
--(instancetype)initWithWidth: (int) w andHeight: (int) h
-    {
-        self = [super init];
-        if (self){
-            width = w;
-            height = h;
-            
-        
-    }
-    return self;
-    }
 @end

@@ -18,6 +18,6 @@
 -(id)initWithPlayerNames: (NSArray *)playerNamesArray trackName:(NSString *)theTrackName;
 -(id)initWithPlayerNames:(NSArray *)playerNamesArray trackName:(NSString *)theTrackName location:(NSString *)theLocationName;
 
--(void)theRace;
+-(void)race;
 
 @end

@@ -13,12 +13,17 @@
 @property int numerator,denominator, wholeNumber;
 
 -(void) setTo: (int) n over: (int) d;
++(kpFraction *)allocF;
++(int) count;
+
++(void)showAddCount:(int)countVal;
++(int)methCount;
 
 
-//-(kpFraction *) add: (kpFraction *) f;
-//-(kpFraction *) subtract: (kpFraction *) f;
-//-(kpFraction *) multiply: (kpFraction *) f;
-//-(kpFraction *) divide: (kpFraction *) f;
+-(kpFraction *) add: (kpFraction *) f;
+-(kpFraction *) subtract: (kpFraction *) f;
+-(kpFraction *) multiply: (kpFraction *) f;
+-(kpFraction *) divide: (kpFraction *) f;
 
 -(void) reduce;
 -(void) print;
