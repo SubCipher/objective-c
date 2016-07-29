@@ -63,26 +63,20 @@ static int gCounter;
 }
 
 
-+(void)showAddCount:(int)countVal{
-   extern int addCountVal =+ countVal;
+-(void)showAddCount{
+    extern int addCountVal;
+    NSLog(@"number of times add method is invoked: %d times",addCountVal);
     }
 
--(int)totalAddCount{
-    extern int addCountVal;
-    return addCountVal;
-    
-}
-
 -(kpFraction *) add: (kpFraction *) f{
-    int useCount;
+
     //new fraction instance to store result of addition
     kpFraction *results = [[kpFraction alloc]init];
-    ++useCount;
+    ++addCountVal;
     
     results.numerator = numerator * f.denominator + denominator * f.numerator;
     results.denominator = denominator * f.denominator;
     //[results reduce];
-    [self showAddCount:useCount];
     return results;
     
 }

@@ -65,7 +65,9 @@ int main(int argc, const char * argv[]) {
         [result reduce];
         
         result01 = [dataValue00 add: dataValue00];
+        result02 = [dataValue00 add: dataValue00];
         kpXYPoints *testPoints = [[kpXYPoints alloc]init];
+        [result showAddCount];
         
         [testPoints setPoints: 4.5 setY: 5.5];
         dataValue00 = testPoints;

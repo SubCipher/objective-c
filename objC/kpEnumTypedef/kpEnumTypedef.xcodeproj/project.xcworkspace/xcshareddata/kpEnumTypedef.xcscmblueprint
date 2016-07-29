@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "72B3015EC1AA99781013F72014CD7BBFE7AF69C3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "72B3015EC1AA99781013F72014CD7BBFE7AF69C3" : 0,
+    "B0ADF7A69BC554547BEAA5666F78E236B5A35DB7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0792E6BD-4012-4A6D-B777-27AD27076790",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "72B3015EC1AA99781013F72014CD7BBFE7AF69C3" : "objective-c\/",
+    "B0ADF7A69BC554547BEAA5666F78E236B5A35DB7" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "kpEnumTypedef",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "objC\/kpEnumTypedef\/kpEnumTypedef.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SubCipher\/objective-c.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "72B3015EC1AA99781013F72014CD7BBFE7AF69C3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SubCipher\/viEditor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B0ADF7A69BC554547BEAA5666F78E236B5A35DB7"
+    }
+  ]
+}
