@@ -8,13 +8,28 @@
 
 #import "enumMonths.h"
 
+@interface enumMonths()
+
+@property int selectedMonth;
+-(void)selectMonth;
+
+@end
+
 @implementation enumMonths
 
-enum month {january,february,march,arpil,may,june,july,august,september,october,november,december};
-enum month amonth;
-int days;
+-(int)randomMonthGen{
+    _selectedMonth = arc4random()%15;
+    return _selectedMonth;
+}
 
--(void)selectMonth:(int)thisMonth{
+
+-(void)selectMonth{ 
+    
+    enum month {january =1,february,march,april,may,june,july,august,september,october,november,december};
+    enum month amonth;
+    int days;
+
+    amonth =[self randomMonthGen];
     
     switch(amonth){
         case january:
@@ -25,7 +40,8 @@ int days;
         case october:
         case december:
             days = 31;
-        case arpil:
+            break;
+        case april:
         case june:
         case september:
         case november:
@@ -40,10 +56,22 @@ int days;
             break;
     }
     if (days != 0)
-        NSLog(@"Number of days is %i",days);
+        NSLog(@"Number of days is %i -amonth= %i",days,amonth);
     if( amonth == february)
         NSLog(@"...or 29 if it's a leap year");
 
 }
+
+
+-(id)initWithSelectedMonth{
+    self = [super init];
+    if(self){
+    
+       [self selectMonth];
+        
+    }
+    return self;
+}
+
 
 @end

@@ -10,5 +10,10 @@
 
 @interface enumMonths : NSObject
 
--(void)selectMonth:(int)thisMonth;
+@property (readonly)int selectedMonth;
+
+
+
+-(int)randomMonthGen;
+-(id)initWithSelectedMonth;
 @end

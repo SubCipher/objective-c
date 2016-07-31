@@ -12,11 +12,9 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        enumMonths * findmonth = [[enumMonths alloc]init];
+        enumMonths * findmonth = [[enumMonths alloc]initWithSelectedMonth];
         
-        [findmonth selectMonth:4];
-        
-    }
+           }
     
     return 0;
 }
