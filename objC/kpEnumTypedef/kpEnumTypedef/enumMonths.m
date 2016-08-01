@@ -15,21 +15,58 @@
 
 @end
 
+
+
 @implementation enumMonths
 
 -(int)randomMonthGen{
     _selectedMonth = arc4random()%15;
     return _selectedMonth;
+    
 }
 
 
--(void)selectMonth{ 
+-(void)payRates:(int)rate{
+    
+    enum salary { day = 1, week, month, year};
+    enum salary payRate;
+    int payCheck;
+    payRate = rate;
+    
+    switch(payRate){
+        case day:
+            payCheck = 295;
+            break;
+        case week:
+            payCheck = 5*295;
+            break;
+        case month:
+            payCheck = 295*(250/12);
+            break;
+        case year:
+            payCheck = 295*250;
+            break;
+        default:
+            NSLog(@"did you invoice your time this week?");
+            payCheck = 0;
+            break;
+            
+    }
+    
+    NSLog(@"the rate of pay for selected option $%i",payCheck);
+    
+}
+
+-(void)selectMonth{
     
     enum month {january =1,february,march,april,may,june,july,august,september,october,november,december};
     enum month amonth;
+    
+    enum month thisMonth;
+    thisMonth = 5;
     int days;
 
-    amonth =[self randomMonthGen];
+    amonth = [self randomMonthGen];
     
     switch(amonth){
         case january:
@@ -56,7 +93,7 @@
             break;
     }
     if (days != 0)
-        NSLog(@"Number of days is %i -amonth= %i",days,amonth);
+        NSLog(@"Number of days is %i -amonth= %i, thisMonth = %i",days,amonth,thisMonth);
     if( amonth == february)
         NSLog(@"...or 29 if it's a leap year");
 
@@ -73,5 +110,21 @@
     return self;
 }
 
+-(void)displayMonth{
+    
+}
+
+-(void)thisDef{
+    
+    typedef int money;
+    money payRate;
+    
+    
+    payRate = 4;
+    
+    NSLog(@"print %i",payRate);
+    
+    
+}
 
 @end

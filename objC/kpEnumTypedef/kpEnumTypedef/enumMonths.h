@@ -16,4 +16,10 @@
 
 -(int)randomMonthGen;
 -(id)initWithSelectedMonth;
+-(void)displayMonth;
+
+-(void)payRates:(int)rate;
+-(void)thisDef;
+
+
 @end
