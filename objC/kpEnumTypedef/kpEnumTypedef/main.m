@@ -20,7 +20,8 @@ int main(int argc, const char * argv[]) {
         
         typedef enumMonths enumObjCopy;
     
-        enumObjCopy *e1 = [[enumMonths alloc]initWithSelectedMonth],*e2 = [[enumMonths alloc]initWithSelectedMonth];
+        enumObjCopy *e1 = [[enumMonths alloc]initWithSelectedMonth],
+                    *e2 = [[enumMonths alloc]initWithSelectedMonth];
         
         [e1 displayMonth];
         [e2 displayMonth];

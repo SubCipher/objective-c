@@ -7,11 +7,14 @@
 //
 
 #import "kpFraction.h"
+#import "kpFraction+mathOps.h"
 
 static int addCountVal;
 static int gCounter;
 
+
 @implementation kpFraction
+
 @synthesize numerator,denominator,wholeNumber;
 
 +(kpFraction *)allocF{
@@ -68,51 +71,6 @@ static int gCounter;
     NSLog(@"number of times add method is invoked: %d times",addCountVal);
     }
 
--(kpFraction *) add: (kpFraction *) f{
-
-    //new fraction instance to store result of addition
-    kpFraction *results = [[kpFraction alloc]init];
-    ++addCountVal;
-    
-    results.numerator = numerator * f.denominator + denominator * f.numerator;
-    results.denominator = denominator * f.denominator;
-    //[results reduce];
-    return results;
-    
-}
-
-
--(kpFraction *) subtract: (kpFraction *) s{
-    kpFraction *sFraction = [[kpFraction alloc] init];
-    
-    sFraction.numerator = numerator * s.denominator - denominator * s.numerator;
-    sFraction.denominator = (denominator * s.denominator);
-    [sFraction reduce];
-    [sFraction print];
-    
-    return sFraction;
-    
-}
-
--(kpFraction *) multiply: (kpFraction *) m{
-    kpFraction *multiResult = [[kpFraction alloc] init];
-    
-    multiResult.numerator = numerator * m.numerator;
-    multiResult.denominator = denominator * m.denominator;
-    [multiResult reduce];
-    return multiResult;
-    
-}
-
--(kpFraction *) divide: (kpFraction *) d{
-    kpFraction *divResult = [[kpFraction alloc]init];
-    
-    divResult.numerator = numerator * d.denominator;
-    divResult.denominator = denominator * d.numerator;
-    [divResult reduce];
-    return divResult;
-    
-}
 
 
 @end
