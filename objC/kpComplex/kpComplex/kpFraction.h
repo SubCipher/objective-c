@@ -20,6 +20,14 @@
 
 //-(int)methCount;
 
+-(void)twoNumbers:(int)Num1 secNum:(int)Num2;
+
+-(kpFraction *) add: (kpFraction *) f;
+-(kpFraction *) subtract: (kpFraction *) f;
+-(kpFraction *) multiply: (kpFraction *) f;
+-(kpFraction *) divide: (kpFraction *) f;
+
+
 
 -(void) reduce;
 -(void) print;

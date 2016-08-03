@@ -42,6 +42,11 @@ int main(int argc, const char * argv[]) {
 
         //kpComplex *compResult;
         
+        kpFraction *itsAthing = [kpFraction new];
+        
+        [itsAthing twoNumbers:4 secNum:8];
+        
+        
         
         [f1 setTo: 1 over: 10];
         [f2 setTo: 2 over: 15];

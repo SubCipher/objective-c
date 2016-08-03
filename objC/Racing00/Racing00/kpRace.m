@@ -130,7 +130,11 @@
     
     NSString * weatherURLString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?q=%@&APPID=9b6f7c096382c930edf02861f539efc4",_location];
     
+    
+    //NSURLConnection call to category method
     NSData *data = [NSURLConnection sendSynchronousRequestWithURLString:weatherURLString];
+    
+    
     
     NSString * weatherString = nil;
     if(data != nil){

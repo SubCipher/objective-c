@@ -12,14 +12,8 @@
 
 @interface kpFraction (mathOps)
 
-@property int numerator,denominator, wholeNumber;
 
--(kpFraction *) add: (kpFraction *) f;
-
--(kpFraction *) subtract: (kpFraction *) f;
--(kpFraction *) multiply: (kpFraction *) f;
--(kpFraction *) divide: (kpFraction *) f;
-
+-(int)addThis:(int)a1 secNum:(int)a2;
 
 
 @end
