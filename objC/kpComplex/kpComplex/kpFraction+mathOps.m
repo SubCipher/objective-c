@@ -14,7 +14,16 @@
     
     int results = a1 + a2;
     return results;
+}
+
+-(kpFraction  *) invert:(kpFraction *)flipThis {
+    kpFraction *inverted = [[kpFraction alloc]init];
+    inverted.numerator = flipThis.denominator;
+    inverted.denominator = flipThis.numerator;
+    
+    return inverted;
     
 }
+
 
 @end

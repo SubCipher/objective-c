@@ -8,9 +8,16 @@
 
 #import "kpFraction.h"
 #import "kpFraction+mathOps.h"
+#import "kpFraction+comparison.h"
 
 static int addCountVal;
 static int gCounter;
+
+@interface kpFraction()
+
+
+-(void) reduce;
+@end
 
 
 @implementation kpFraction
@@ -45,7 +52,13 @@ static int gCounter;
     
     results.numerator = numerator * f.denominator + denominator * f.numerator;
     results.denominator = denominator * f.denominator;
-    //[results reduce];
+    [results reduce];tt
+    [results print];
+    kpFraction *flippedOut = [results invert:results];
+    [flippedOut print];
+    
+    
+    [results print];
     return results;
     
 }
@@ -101,17 +114,17 @@ static int gCounter;
 }
 
 -(void) reduce{
-    int u = numerator;
-    int v = denominator;
+    int n = numerator;
+    int d = denominator;
     int temp;
     
-    while (v != 0){
-        temp = u % v;
-        u = v;
-        v = temp;
+    while (d != 0){
+        temp = n % d;
+        n = d;
+        d = temp;
     }
-    numerator /= u;
-    denominator /= u;
+    numerator /= n;
+    denominator /= n;
     
     if (numerator > denominator){
         

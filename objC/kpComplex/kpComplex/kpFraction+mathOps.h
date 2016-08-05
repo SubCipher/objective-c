@@ -9,11 +9,9 @@
 #import "kpFraction.h"
 
 
-
 @interface kpFraction (mathOps)
-
 
 -(int)addThis:(int)a1 secNum:(int)a2;
 
-
+-(kpFraction *) invert: (kpFraction *)flipThis;
 @end

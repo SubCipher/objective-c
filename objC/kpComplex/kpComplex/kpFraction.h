@@ -28,8 +28,6 @@
 -(kpFraction *) divide: (kpFraction *) f;
 
 
-
--(void) reduce;
 -(void) print;
 -(double) convertToNum;
 

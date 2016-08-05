@@ -49,7 +49,7 @@ int main(int argc, const char * argv[]) {
         
         
         [f1 setTo: 1 over: 10];
-        [f2 setTo: 2 over: 15];
+        [f2 setTo: 3 over: 18];
         
         [c1 setReal: 18.0 andImaginary: 2.5];
         [c2 setReal: -5.0 andImaginary: 3.2];
@@ -66,8 +66,11 @@ int main(int argc, const char * argv[]) {
       
         dataValue00 = f1 ;
         dataValue01 = f2;
+    
+        
+        
         result = [dataValue00 add:  dataValue01];
-        [result reduce];
+      
         
         result01 = [dataValue00 add: dataValue00];
         result02 = [dataValue00 add: dataValue00];
