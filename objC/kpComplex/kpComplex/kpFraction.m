@@ -15,7 +15,6 @@ static int gCounter;
 
 @interface kpFraction()
 
-
 -(void) reduce;
 @end
 
@@ -42,7 +41,15 @@ static int gCounter;
     NSLog(@"its A Thing = %d",really);
     
 }
-
+-(void)compareThis:(kpFraction *)compVal1 comp2:(kpFraction *)compVal2{
+    int comparedValue;
+    [compVal1 reduce];
+     
+    comparedValue = [compVal1 compareFractions:compVal1 secOne:compVal2];
+    
+    
+    NSLog(@"this is the compared value %d",comparedValue);
+}
 
 -(kpFraction *) add: (kpFraction *) f{
     
@@ -52,7 +59,7 @@ static int gCounter;
     
     results.numerator = numerator * f.denominator + denominator * f.numerator;
     results.denominator = denominator * f.denominator;
-    [results reduce];tt
+    [results reduce];
     [results print];
     kpFraction *flippedOut = [results invert:results];
     [flippedOut print];
@@ -64,8 +71,10 @@ static int gCounter;
 }
 
 
+
 -(kpFraction *) subtract: (kpFraction *) s{
     kpFraction *sFraction = [[kpFraction alloc] init];
+    
     
     sFraction.numerator = numerator * s.denominator - denominator * s.numerator;
     sFraction.denominator = (denominator * s.denominator);
@@ -112,6 +121,7 @@ static int gCounter;
     else
         return NAN;
 }
+
 
 -(void) reduce{
     int n = numerator;

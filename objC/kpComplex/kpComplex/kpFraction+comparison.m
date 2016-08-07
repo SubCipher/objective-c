@@ -10,23 +10,31 @@
 
 @implementation kpFraction (comparison)
 
--(BOOL)isEqual:(kpFraction *)f1 secFraction:(kpFraction *) f2{
-    if([f1 isEqual:f2])
+-(BOOL)isEqual:(kpFraction *)f1 {
+    kpFraction *f2 = [[kpFraction alloc]init];
+    
+    if([f1 isEqual: f2])
         return YES;
     else
         return NO;
 }
 
 
--(int)compare:(kpFraction *)f1 secFraction:(kpFraction *) f2{
-    if(f1 < f2)
+-(int)compareFractions:(kpFraction *)f1 secOne:(kpFraction *)f2{
+    
+    
+    NSLog(@"f1 numerator = %d / f2 numerator = %d",f1.numerator,f2.numerator);
+    
+    if(f1.numerator < f2.numerator && f1.denominator < f2.denominator)
         return -1;
     
-    else if (f1 == f2)
-        return 0;
+    else if(f1.numerator == f2.numerator && f1.denominator ==  f2.denominator)
+        return 10;
     
-    else
+    else if(f1.numerator > f2.numerator && f1.denominator > f2.denominator)
         return 1;
+    else
+        return 20;
         
 }
 

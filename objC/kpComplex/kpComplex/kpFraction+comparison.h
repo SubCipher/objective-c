@@ -10,9 +10,8 @@
 
 @interface kpFraction (comparison)
 
--(BOOL)isEqual:(kpFraction *)f1 secFraction:(kpFraction *)f2;
+-(BOOL)isEqual:(kpFraction *)f;
 
--(int)compare:(kpFraction *)f1 secFraction:(kpFraction *)f2;
-
+-(int)compareFractions:(kpFraction *)f1 secOne:(kpFraction *)f2;
 
 @end

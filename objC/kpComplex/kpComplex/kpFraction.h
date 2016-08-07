@@ -12,6 +12,7 @@
 
 @property int numerator,denominator, wholeNumber;
 
+
 -(void) setTo: (int) n over: (int) d;
 +(kpFraction *)allocF;
 +(int) count;
@@ -22,6 +23,7 @@
 
 -(void)twoNumbers:(int)Num1 secNum:(int)Num2;
 
+-(void)compareThis:(kpFraction *)compVal1 comp2:(kpFraction *)compVal2;
 -(kpFraction *) add: (kpFraction *) f;
 -(kpFraction *) subtract: (kpFraction *) f;
 -(kpFraction *) multiply: (kpFraction *) f;
