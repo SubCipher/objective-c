@@ -46,40 +46,44 @@ int main(int argc, const char * argv[]) {
         
         
         
-        [f1 setTo: 1 over: 10];
-        [f2 setTo: 3 over: 18];
+        [f1 setTo: 25 over: 100];
+        [f2 setTo: 5 over: 10];
         //compare here
         kpFraction *stillAThing = [kpFraction new];
         
         [stillAThing compareThis:f1 comp2:f2];
+        BOOL eqResults;
+        
+        eqResults = [f1 eqCheck:f1 checkE2:f2];
+        NSLog(@"is f1 result to f2? %d",eqResults);
 
         
         
-        [c1 setReal: 18.0 andImaginary: 2.5];
-        [c2 setReal: -5.0 andImaginary: 3.2];
-
-        [c1 print]; NSLog(@"        +"); [c2 print];
-        NSLog (@"------------------");
-        FractionDataValue00 = [c1 add: c2];
-        [FractionDataValue00 print];
-        
-        [f1 print]; NSLog (@"       +"); [f2 print];
-        NSLog(@"----------");
-        //fracResult = [f1 add: f2];
-      
-        FractionDataValue00 = f1;
-        FractionDataValue01 = f2;
-    
-               
-        FractionResult = [FractionDataValue00 add:  FractionDataValue01];
-        kpXYPoints *testPoints = [[kpXYPoints alloc]init];
-        [FractionResult showAddCount];
-        
-        [testPoints setPoints: 4.5 setY: 5.5];
-        FractionDataValue00 = testPoints;
-        [FractionDataValue00 printPoints];
-        
-         NSLog(@"fractions allocated: %i",[kpFraction count]);
+//        [c1 setReal: 18.0 andImaginary: 2.5];
+//        [c2 setReal: -5.0 andImaginary: 3.2];
+//
+//        [c1 print]; NSLog(@"        +"); [c2 print];
+//        NSLog (@"------------------");
+//        FractionDataValue00 = [c1 add: c2];
+//        [FractionDataValue00 print];
+//        
+//        [f1 print]; NSLog (@"       +"); [f2 print];
+//        NSLog(@"----------");
+//        //fracResult = [f1 add: f2];
+//      
+//        FractionDataValue00 = f1;
+//        FractionDataValue01 = f2;
+//    
+//               
+//        FractionResult = [FractionDataValue00 add:  FractionDataValue01];
+//        kpXYPoints *testPoints = [[kpXYPoints alloc]init];
+//        [FractionResult showAddCount];
+//        
+//        [testPoints setPoints: 4.5 setY: 5.5];
+//        FractionDataValue00 = testPoints;
+//        [FractionDataValue00 printPoints];
+//        
+//         NSLog(@"fractions allocated: %i",[kpFraction count]);
             }
    
     return 0;

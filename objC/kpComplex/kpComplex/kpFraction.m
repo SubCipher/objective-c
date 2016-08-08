@@ -41,11 +41,17 @@ static int gCounter;
     NSLog(@"its A Thing = %d",really);
     
 }
+
+-(BOOL)eqCheck: (kpFraction*)ifEq1 checkE2:(kpFraction *)ifEq2{
+    BOOL eqResults = [ifEq2 isEqual:ifEq1 secIsEqualVal:ifEq2];
+    return eqResults;
+}
 -(void)compareThis:(kpFraction *)compVal1 comp2:(kpFraction *)compVal2{
     int comparedValue;
-    [compVal1 reduce];
+    double fractionDeciVal1 = [compVal1 convertToNum];
+    double fractionDeciVal2 = [compVal2 convertToNum];
      
-    comparedValue = [compVal1 compareFractions:compVal1 secOne:compVal2];
+    comparedValue = [compVal1 compareFractions:fractionDeciVal1 secOne:fractionDeciVal2];
     
     
     NSLog(@"this is the compared value %d",comparedValue);

@@ -1,3 +1,4 @@
+
 //
 //  kpFraction+comparison.m
 //  kpComplex
@@ -10,29 +11,33 @@
 
 @implementation kpFraction (comparison)
 
--(BOOL)isEqual:(kpFraction *)f1 {
-    kpFraction *f2 = [[kpFraction alloc]init];
+-(BOOL)isEqual:(kpFraction *)isE1 secIsEqualVal:(kpFraction *)isE2{
     
-    if([f1 isEqual: f2])
+    
+    if([isE1 isEqual: isE2])
         return YES;
     else
         return NO;
 }
 
-
--(int)compareFractions:(kpFraction *)f1 secOne:(kpFraction *)f2{
+-(double)compareFractions:(double)f1 secOne:(double)f2{
     
+    //float covertFractionToDecimal_1 = ((float)f1.numerator/f1.denominator);
+    //float covertFractionToDecimal_2 = ((float)f2.numerator/f2.denominator);
     
-    NSLog(@"f1 numerator = %d / f2 numerator = %d",f1.numerator,f2.numerator);
+    NSLog(@"f1 = %e f2 = %e",f1,f2);
     
-    if(f1.numerator < f2.numerator && f1.denominator < f2.denominator)
-        return -1;
+    NSLog(@"f1 = %f f2 = %f (in decimal)",f1,f2);
     
-    else if(f1.numerator == f2.numerator && f1.denominator ==  f2.denominator)
-        return 10;
+    if(f1 < f2)
+        return -1; 
     
-    else if(f1.numerator > f2.numerator && f1.denominator > f2.denominator)
+    else if(f1 == f2)
+        return 0;
+    
+    else if (f1  > f2)
         return 1;
+    
     else
         return 20;
         
