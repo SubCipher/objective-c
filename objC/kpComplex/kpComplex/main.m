@@ -23,26 +23,27 @@ int main(int argc, const char * argv[]) {
 //        [myFraction setNumerator: 5 andDenominator: 12];
 //        [myFraction print];
 
+        /*
         id FractionDataValue00;
         id FractionDataValue01;
         id FractionResult;
-        
+        */
         
         kpFraction *f1 = [[kpFraction allocF] init];
         kpFraction *f2 = [[kpFraction allocF] init];
-        /* fracResult is replaced by id dataValue via Dynamic binding using id Type */
+        /*fracResult is replaced by id dataValue via Dynamic binding using id Type */
         //kpFraction *fracResult;
         
-        
+        /*
         kpComplex *c1 = [[kpComplex alloc] init];
         kpComplex *c2 = [[kpComplex alloc] init];
-        /* compResult is replaced by id dataValue via Dynamic binding using id Type */
+        compResult is replaced by id dataValue via Dynamic binding using id Type */
 
         //kpComplex *compResult;
         
-        kpFraction *itsAthing = [kpFraction new];
+        //kpFraction *itsAthing = [kpFraction new];
         
-        [itsAthing twoNumbers:4 secNum:8];
+        //[itsAthing twoNumbers:4 secNum:8];
         
         
         
@@ -54,10 +55,21 @@ int main(int argc, const char * argv[]) {
         [stillAThing compareThis:f1 comp2:f2];
         BOOL eqResults;
         
-        eqResults = [f1 eqCheck:f1 checkE2:f2];
-        NSLog(@"is f1 result to f2? %d",eqResults);
-
         
+        if([f1 conformsToProtocol: @protocol(mathStuff)] == YES){
+            NSLog(@"f1 (fraction object does conform to the @protocol(mathStuff)");
+            eqResults = [f1 eqCheck:f1 checkE2:f2];
+            NSLog(@"is f1 result equal to f2? %d",eqResults);
+        }
+        else{
+            NSLog(@"f1 does not conform to @protocol(mathStuff");
+        }
+
+        BOOL testBoolRTN = [f1 isEqual:f2];
+        
+        [f1 doesContain:f2];
+        
+        NSLog(@"test BOOL value return %hhd",testBoolRTN);
         
 //        [c1 setReal: 18.0 andImaginary: 2.5];
 //        [c2 setReal: -5.0 andImaginary: 3.2];

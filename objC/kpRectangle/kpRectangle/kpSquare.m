@@ -9,14 +9,14 @@
 #import "kpSquare.h"
 @implementation kpSquare: kpRectangle
 
-//-(id) initWithSide: (int) side{
-//   self = [super init];
-//     if(self) {
-//         
-//     }
-//    return self;
-//    }
-//
+-(id) initWithSide: (int) side{
+   self = [super init];
+     if(self) {
+         
+     }
+    return self;
+    }
+
 
 -(void) setSide: (float) s{
     

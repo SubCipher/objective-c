@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1877F0B61D59286800E545E4 /* kpCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877F0B51D59286800E545E4 /* kpCalculator.m */; };
+		1877F0B91D59587C00E545E4 /* kpCalculator+Trig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877F0B81D59587C00E545E4 /* kpCalculator+Trig.m */; };
 		20BB84ED1D24BBFF00F016D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB84EC1D24BBFF00F016D2 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1877F0B41D59286800E545E4 /* kpCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpCalculator.h; sourceTree = "<group>"; };
+		1877F0B51D59286800E545E4 /* kpCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpCalculator.m; sourceTree = "<group>"; };
+		1877F0B71D59587C00E545E4 /* kpCalculator+Trig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kpCalculator+Trig.h"; sourceTree = "<group>"; };
+		1877F0B81D59587C00E545E4 /* kpCalculator+Trig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "kpCalculator+Trig.m"; sourceTree = "<group>"; };
 		20BB84E91D24BBFF00F016D2 /* kpCalculaor01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kpCalculaor01; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BB84EC1D24BBFF00F016D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1877F0AD1D59057700E545E4 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				1877F0B71D59587C00E545E4 /* kpCalculator+Trig.h */,
+				1877F0B81D59587C00E545E4 /* kpCalculator+Trig.m */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
 		20BB84E01D24BBFF00F016D2 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				20BB84EC1D24BBFF00F016D2 /* main.m */,
+				1877F0B41D59286800E545E4 /* kpCalculator.h */,
+				1877F0B51D59286800E545E4 /* kpCalculator.m */,
+				1877F0AD1D59057700E545E4 /* categories */,
 			);
 			path = kpCalculaor01;
 			sourceTree = "<group>";
@@ -118,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1877F0B61D59286800E545E4 /* kpCalculator.m in Sources */,
+				1877F0B91D59587C00E545E4 /* kpCalculator+Trig.m in Sources */,
 				20BB84ED1D24BBFF00F016D2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +259,7 @@
 				20BB84F21D24BBFF00F016D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

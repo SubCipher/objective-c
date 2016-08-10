@@ -10,4 +10,16 @@
 
 @implementation kpCalculator (Trig)
 
+-(double) sin{
+    return 0;
+}
+-(double) cos{
+    
+    return 0;
+}
+-(double) tan{
+    
+    return 0;
+}
+    
 @end

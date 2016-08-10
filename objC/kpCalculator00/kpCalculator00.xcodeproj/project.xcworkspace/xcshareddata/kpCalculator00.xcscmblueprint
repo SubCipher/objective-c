@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "72B3015EC1AA99781013F72014CD7BBFE7AF69C3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "72B3015EC1AA99781013F72014CD7BBFE7AF69C3" : 0,
+    "B0ADF7A69BC554547BEAA5666F78E236B5A35DB7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "436F048F-9B66-4F40-B7EA-7F8F14A7DEF0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "72B3015EC1AA99781013F72014CD7BBFE7AF69C3" : "objective-c\/",
+    "B0ADF7A69BC554547BEAA5666F78E236B5A35DB7" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "kpCalculator00",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "objC\/kpCalculator00\/kpCalculator00.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SubCipher\/objective-c.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "72B3015EC1AA99781013F72014CD7BBFE7AF69C3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SubCipher\/viEditor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B0ADF7A69BC554547BEAA5666F78E236B5A35DB7"
+    }
+  ]
+}

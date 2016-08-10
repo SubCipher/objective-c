@@ -35,11 +35,50 @@ static int gCounter;
     return gCounter;
 }
 
--(void)twoNumbers:(int)Num1 secNum:(int)Num2{
+//-(void)twoNumbers:(int)Num1 secNum:(int)Num2{
+//    
+//   int really = [self addThis:Num1 secNum:Num2];
+//    NSLog(@"its A Thing = %d",really);
+//    
+//}
+
+
+
+- (BOOL)isEqualTo:(id)object{
+    return self == object;
+}
+- (BOOL)isLessThanOrEqualTo:(id)object{
+    return self <= object;
     
-   int really = [self addThis:Num1 secNum:Num2];
-    NSLog(@"its A Thing = %d",really);
+}
+- (BOOL)isLessThan:(id)object{
     
+    return self < object;
+}
+- (BOOL)isGreaterThanOrEqualTo:(id)object{
+    
+    return self >= object;
+}
+- (BOOL)isGreaterThan:(id)object{
+    
+    return self > object;
+}
+- (BOOL)isNotEqualTo:(id)object{
+    
+    return self != object;
+    
+}
+- (BOOL)doesContain:(id)object{
+    
+    return 0;
+}
+- (BOOL)isLike:(NSString *)object{
+    
+    return 0;
+}
+- (BOOL)isCaseInsensitiveLike:(NSString *)object{
+    
+    return 0;
 }
 
 -(BOOL)eqCheck: (kpFraction*)ifEq1 checkE2:(kpFraction *)ifEq2{

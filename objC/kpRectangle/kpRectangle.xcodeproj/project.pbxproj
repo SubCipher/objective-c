@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1877F0BD1D59882300E545E4 /* kpNewSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1877F0BC1D59882300E545E4 /* kpNewSquare.m */; };
 		20BB83D01D197AFF00F016D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB83CF1D197AFF00F016D2 /* main.m */; };
 		20F053BE1D27D15300BEC58D /* kpRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053BD1D27D15300BEC58D /* kpRectangle.m */; };
 		20F053C11D27D20D00BEC58D /* kpSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F053C01D27D20D00BEC58D /* kpSquare.m */; };
@@ -29,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1877F0BB1D59882300E545E4 /* kpNewSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpNewSquare.h; sourceTree = "<group>"; };
+		1877F0BC1D59882300E545E4 /* kpNewSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kpNewSquare.m; sourceTree = "<group>"; };
 		20BB83CC1D197AFF00F016D2 /* kpRectangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kpRectangle; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BB83CF1D197AFF00F016D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20F053BC1D27D15300BEC58D /* kpRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kpRectangle.h; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				20F053E51D2A81FD00BEC58D /* kpGraphicObject.m */,
 				20F053BF1D27D20D00BEC58D /* kpSquare.h */,
 				20F053C01D27D20D00BEC58D /* kpSquare.m */,
+				1877F0BB1D59882300E545E4 /* kpNewSquare.h */,
+				1877F0BC1D59882300E545E4 /* kpNewSquare.m */,
 				20F053C51D28319300BEC58D /* kpXYZpoints.h */,
 				20F053C61D28319300BEC58D /* kpXYZpoints.m */,
 				20BB83CF1D197AFF00F016D2 /* main.m */,
@@ -154,6 +159,7 @@
 				20F053E91D2A8A8100BEC58D /* kpCircle.m in Sources */,
 				20BB83D01D197AFF00F016D2 /* main.m in Sources */,
 				20F053C71D28319300BEC58D /* kpXYZpoints.m in Sources */,
+				1877F0BD1D59882300E545E4 /* kpNewSquare.m in Sources */,
 				20F053E61D2A81FD00BEC58D /* kpGraphicObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

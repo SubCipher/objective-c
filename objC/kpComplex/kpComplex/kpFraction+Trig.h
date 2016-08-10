@@ -9,5 +9,9 @@
 #import "kpFraction.h"
 
 @interface kpFraction (Trig)
+-(double) sin;
+-(double) cos;
+-(double) tan;
+
 
 @end

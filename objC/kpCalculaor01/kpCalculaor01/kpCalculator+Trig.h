@@ -10,4 +10,10 @@
 
 @interface kpCalculator (Trig)
 
+-(double) sin;
+-(double) cos;
+-(double) tan;
+
+
 @end
+
