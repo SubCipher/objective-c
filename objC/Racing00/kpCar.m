@@ -52,4 +52,8 @@
     //NSLog(@"car topSpeed: %d",_topSpeed);
     }
 
+-(void)repair{
+    NSLog(@"car has been repaired");
+}
+
 @end

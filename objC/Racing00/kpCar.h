@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "kpRacingClassCar.h"
 
-@interface kpCar : NSObject
+@interface kpCar : NSObject <kpRacingClassCar>
 
 @property (readonly) NSArray *lapTimes;
 
