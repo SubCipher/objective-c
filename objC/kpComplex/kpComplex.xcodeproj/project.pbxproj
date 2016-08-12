@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1801F50F1D54299000C24326 /* kpFraction+comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801F50E1D54299000C24326 /* kpFraction+comparison.m */; };
+		182DB7F71D5D7BA700F915EC /* kpFraction+Trig.m in Sources */ = {isa = PBXBuildFile; fileRef = 182DB7F61D5D7BA700F915EC /* kpFraction+Trig.m */; };
 		18495D671D4EF4800011E967 /* kpFraction+mathOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 18495D661D4EF4800011E967 /* kpFraction+mathOps.m */; };
 		20BB83BD1D18772600F016D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB83BC1D18772600F016D2 /* main.m */; };
 		20F054081D2CB65A00BEC58D /* kpComplex.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F054071D2CB65A00BEC58D /* kpComplex.m */; };
@@ -30,6 +31,9 @@
 /* Begin PBXFileReference section */
 		1801F50D1D54299000C24326 /* kpFraction+comparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kpFraction+comparison.h"; sourceTree = "<group>"; };
 		1801F50E1D54299000C24326 /* kpFraction+comparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "kpFraction+comparison.m"; sourceTree = "<group>"; };
+		182DB7F41D5D6DC000F915EC /* mathStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathStuff.h; sourceTree = "<group>"; };
+		182DB7F51D5D7BA700F915EC /* kpFraction+Trig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kpFraction+Trig.h"; sourceTree = "<group>"; };
+		182DB7F61D5D7BA700F915EC /* kpFraction+Trig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "kpFraction+Trig.m"; sourceTree = "<group>"; };
 		18495D651D4EF4800011E967 /* kpFraction+mathOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kpFraction+mathOps.h"; sourceTree = "<group>"; };
 		18495D661D4EF4800011E967 /* kpFraction+mathOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "kpFraction+mathOps.m"; sourceTree = "<group>"; };
 		20BB83B91D18772600F016D2 /* kpComplex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kpComplex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,12 +60,28 @@
 		181FE0241D47A588009F89D7 /* categories */ = {
 			isa = PBXGroup;
 			children = (
+				182DB7F51D5D7BA700F915EC /* kpFraction+Trig.h */,
+				182DB7F61D5D7BA700F915EC /* kpFraction+Trig.m */,
 				18495D651D4EF4800011E967 /* kpFraction+mathOps.h */,
 				18495D661D4EF4800011E967 /* kpFraction+mathOps.m */,
 				1801F50D1D54299000C24326 /* kpFraction+comparison.h */,
 				1801F50E1D54299000C24326 /* kpFraction+comparison.m */,
+				182DB7F41D5D6DC000F915EC /* mathStuff.h */,
 			);
 			name = categories;
+			sourceTree = "<group>";
+		};
+		182DB7F81D5D7CF200F915EC /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				20F0542B1D3671B700BEC58D /* kpXYPoints.h */,
+				20F0542C1D3671B700BEC58D /* kpXYPoints.m */,
+				20F054091D2CF3FC00BEC58D /* kpFraction.h */,
+				20F0540A1D2CF3FC00BEC58D /* kpFraction.m */,
+				20F054061D2CB65A00BEC58D /* kpComplex.h */,
+				20F054071D2CB65A00BEC58D /* kpComplex.m */,
+			);
+			name = classes;
 			sourceTree = "<group>";
 		};
 		20BB83B01D18772600F016D2 = {
@@ -83,14 +103,9 @@
 		20BB83BB1D18772600F016D2 /* kpComplex */ = {
 			isa = PBXGroup;
 			children = (
+				182DB7F81D5D7CF200F915EC /* classes */,
 				181FE0241D47A588009F89D7 /* categories */,
 				20BB83BC1D18772600F016D2 /* main.m */,
-				20F0542B1D3671B700BEC58D /* kpXYPoints.h */,
-				20F0542C1D3671B700BEC58D /* kpXYPoints.m */,
-				20F054091D2CF3FC00BEC58D /* kpFraction.h */,
-				20F0540A1D2CF3FC00BEC58D /* kpFraction.m */,
-				20F054061D2CB65A00BEC58D /* kpComplex.h */,
-				20F054071D2CB65A00BEC58D /* kpComplex.m */,
 			);
 			path = kpComplex;
 			sourceTree = "<group>";
@@ -157,6 +172,7 @@
 				20BB83BD1D18772600F016D2 /* main.m in Sources */,
 				20F054081D2CB65A00BEC58D /* kpComplex.m in Sources */,
 				18495D671D4EF4800011E967 /* kpFraction+mathOps.m in Sources */,
+				182DB7F71D5D7BA700F915EC /* kpFraction+Trig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
