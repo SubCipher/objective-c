@@ -1,0 +1,252 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187E3AD31D5E24ED008BA3D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E3AD21D5E24ED008BA3D1 /* main.m */; };
+		187E3ADE1D5E25AF008BA3D1 /* kpDefMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E3ADD1D5E25AF008BA3D1 /* kpDefMacros.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		187E3ACD1D5E24EC008BA3D1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		187E3ACF1D5E24EC008BA3D1 /* kpMacros */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kpMacros; sourceTree = BUILT_PRODUCTS_DIR; };
+		187E3AD21D5E24ED008BA3D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		187E3ADC1D5E25AF008BA3D1 /* kpDefMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kpDefMacros.h; path = ../kpDefMacros.h; sourceTree = "<group>"; };
+		187E3ADD1D5E25AF008BA3D1 /* kpDefMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = kpDefMacros.m; path = ../kpDefMacros.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187E3ACC1D5E24EC008BA3D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187E3AC61D5E24EC008BA3D1 = {
+			isa = PBXGroup;
+			children = (
+				187E3AD11D5E24EC008BA3D1 /* kpMacros */,
+				187E3AD01D5E24EC008BA3D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187E3AD01D5E24EC008BA3D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187E3ACF1D5E24EC008BA3D1 /* kpMacros */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187E3AD11D5E24EC008BA3D1 /* kpMacros */ = {
+			isa = PBXGroup;
+			children = (
+				187E3AD21D5E24ED008BA3D1 /* main.m */,
+				187E3ADC1D5E25AF008BA3D1 /* kpDefMacros.h */,
+				187E3ADD1D5E25AF008BA3D1 /* kpDefMacros.m */,
+			);
+			path = kpMacros;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187E3ACE1D5E24EC008BA3D1 /* kpMacros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187E3AD61D5E24ED008BA3D1 /* Build configuration list for PBXNativeTarget "kpMacros" */;
+			buildPhases = (
+				187E3ACB1D5E24EC008BA3D1 /* Sources */,
+				187E3ACC1D5E24EC008BA3D1 /* Frameworks */,
+				187E3ACD1D5E24EC008BA3D1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kpMacros;
+			productName = kpMacros;
+			productReference = 187E3ACF1D5E24EC008BA3D1 /* kpMacros */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187E3AC71D5E24EC008BA3D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = StepWiseDesigns;
+				TargetAttributes = {
+					187E3ACE1D5E24EC008BA3D1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 187E3ACA1D5E24EC008BA3D1 /* Build configuration list for PBXProject "kpMacros" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 187E3AC61D5E24EC008BA3D1;
+			productRefGroup = 187E3AD01D5E24EC008BA3D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187E3ACE1D5E24EC008BA3D1 /* kpMacros */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187E3ACB1D5E24EC008BA3D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187E3AD31D5E24ED008BA3D1 /* main.m in Sources */,
+				187E3ADE1D5E25AF008BA3D1 /* kpDefMacros.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		187E3AD41D5E24ED008BA3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		187E3AD51D5E24ED008BA3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		187E3AD71D5E24ED008BA3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		187E3AD81D5E24ED008BA3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187E3ACA1D5E24EC008BA3D1 /* Build configuration list for PBXProject "kpMacros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187E3AD41D5E24ED008BA3D1 /* Debug */,
+				187E3AD51D5E24ED008BA3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187E3AD61D5E24ED008BA3D1 /* Build configuration list for PBXNativeTarget "kpMacros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187E3AD71D5E24ED008BA3D1 /* Debug */,
+				187E3AD81D5E24ED008BA3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 187E3AC71D5E24EC008BA3D1 /* Project object */;
+}

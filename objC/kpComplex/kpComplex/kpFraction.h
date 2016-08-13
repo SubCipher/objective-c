@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "mathStuff.h"
 
+
 @interface kpFraction : NSObject <mathStuff>
 
 
 
-@property int numerator,denominator, wholeNumber;
+
+@property int numerator,denominator, wholeNumber; 
 
 
 -(void) setTo: (int) n over: (int) d;
@@ -34,14 +36,13 @@
 -(kpFraction *) multiply: (kpFraction *) f;
 -(kpFraction *) divide: (kpFraction *) f;
 
-
-
+-(void)calculateSin;
 
 -(void) print;
 -(double) convertToNum;
 
-
-
 @end
+
+
 
 

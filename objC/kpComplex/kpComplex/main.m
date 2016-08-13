@@ -47,7 +47,7 @@ int main(int argc, const char * argv[]) {
         
         
         
-        [f1 setTo: 25 over: 100];
+        [f1 setTo: 25 over: 33];
         [f2 setTo: 5 over: 10];
         //compare here
         kpFraction *stillAThing = [kpFraction new];
@@ -96,6 +96,11 @@ int main(int argc, const char * argv[]) {
 //        [FractionDataValue00 printPoints];
 //        
 //         NSLog(@"fractions allocated: %i",[kpFraction count]);
+        
+        
+        [f1 calculateSin];
+        
+        
             }
    
     return 0;

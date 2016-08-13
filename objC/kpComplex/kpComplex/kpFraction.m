@@ -9,6 +9,7 @@
 #import "kpFraction.h"
 #import "kpFraction+mathOps.h"
 #import "kpFraction+comparison.h"
+#import "kpFraction+Trig.h"
 
 static int addCountVal;
 static int gCounter;
@@ -193,6 +194,11 @@ static int gCounter;
     extern int addCountVal;
     NSLog(@"number of times add method is invoked: %d times",addCountVal);
     }
+
+-(void)calculateSin{
+    
+    NSLog(@"the sine result is:%f",[self sin:self]);
+}
 
 
 
