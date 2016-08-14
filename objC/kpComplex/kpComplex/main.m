@@ -55,7 +55,10 @@ int main(int argc, const char * argv[]) {
         [stillAThing compareThis:f1 comp2:f2];
         BOOL eqResults;
         
+        NSString *thisString =[f1 description];
         
+        NSLog(@"%@",thisString);
+                
         if([f1 conformsToProtocol: @protocol(mathStuff)] == YES){
             NSLog(@"f1 (fraction object does conform to the @protocol(mathStuff)");
             eqResults = [f1 eqCheck:f1 checkE2:f2];

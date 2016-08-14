@@ -199,6 +199,9 @@ static int gCounter;
     
     NSLog(@"the sine result is:%f",[self sin:self]);
 }
+-(NSString *)description{
+    return [NSString stringWithFormat:@"%i/%i",numerator,denominator];
+}
 
 
 

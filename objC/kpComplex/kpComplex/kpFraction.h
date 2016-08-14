@@ -12,10 +12,7 @@
 
 @interface kpFraction : NSObject <mathStuff>
 
-
-
-
-@property int numerator,denominator, wholeNumber; 
+@property int numerator,denominator, wholeNumber;
 
 
 -(void) setTo: (int) n over: (int) d;
@@ -40,6 +37,7 @@
 
 -(void) print;
 -(double) convertToNum;
+-(NSString *)description;
 
 @end
 
