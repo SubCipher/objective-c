@@ -38,7 +38,7 @@ int main(int argc, const char * argv[]) {
         
         //test is two strings are equal
         
-        if([str1 isEqualToString:res] == YES)
+        if([str1 isEqualToString:str2] == YES)
             NSLog(@"str1 == res");
         
         else

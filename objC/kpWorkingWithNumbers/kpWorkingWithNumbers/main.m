@@ -14,11 +14,20 @@ int main(int argc, const char * argv[]) {
         //integer value
         
         NSNumber *myNumber, *floatNumber, *intNumber;
-        NSInteger myInt;
+        NSInteger myInt,myInt2;
         
         //intNumber = [NSNumber numberWithInteger:100];
         //see short hand using '@' to create NSObjects.
         intNumber =@100;
+        
+        intNumber = @5;
+        NSNumber *intNumber2 = @5;
+        
+        NSInteger *result;
+        myInt = [intNumber integerValue];
+        
+        myInt2 = [intNumber2 integerValue];
+        result = &myInt2;
         
         myInt = [intNumber integerValue];
         NSLog(@"%li",(long)myInt);
@@ -66,7 +75,6 @@ int main(int argc, const char * argv[]) {
         
         if([intNumber compare:myNumber] == NSOrderedAscending)
             NSLog(@"first number is less than second");
-        
         
         
         
